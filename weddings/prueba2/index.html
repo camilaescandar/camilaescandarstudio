@@ -69,6 +69,13 @@ figure{margin:0}
 .cover-meta .claim{grid-column:1/6;margin:0;font-size:clamp(28px,2.6vw,40px);line-height:1.15}
 .cover-meta p:not(.claim){grid-column:7/11;margin:0;max-width:40ch}
 .cover-meta .acts{grid-column:7/13;display:flex;flex-wrap:wrap;align-items:center;gap:12px 22px}
+.cover-id{padding-bottom:clamp(40px,5vw,72px)}
+.cover-band{position:relative;color:var(--paper);background:var(--ink) url("../../assets/manos-bn.jpg") center 55%/cover no-repeat}
+.cover-band::before{content:"";position:absolute;inset:0;background:rgba(7,13,13,.55)}
+.cover-band .wrap{position:relative}
+.cover-band .cover-meta{padding:clamp(80px,11vw,170px) 0}
+.cover-band .btn{background:var(--paper);color:var(--ink)}
+.cover-band .btn:hover{background:transparent;color:var(--paper);box-shadow:inset 0 0 0 1px var(--paper)}
 .fr{border:1px solid var(--ink);background:var(--white);padding:0}
 .fr img{display:block}
 /* collage */
@@ -179,11 +186,13 @@ footer nav{display:flex;flex-wrap:wrap;gap:8px 22px}
 <main>
 <div class="tex"><div class="wrap">
 <p class="top"><span>Wedding photography</span><span>Based in Chile &amp; available worldwide</span></p>
-<div class="hcol"><figure class="fr hc-rings"><img src="../../assets/b75871c01758.jpg" alt="Argollas en doble exposición con rosas"></figure><figure class="fr hc-walk"><img src="../../assets/ac4c9af7a94b.jpg" alt="Sesión de pareja en un parque"></figure><figure class="fr hc-bub"><img src="../../assets/c5430bc43ebe.jpg" alt="Salida de los novios entre burbujas e invitados, en blanco y negro"></figure><figure class="fr hc-bal"><img src="../../assets/ad386fe4bfd7.jpg" alt="Novios frente a frente en un balcón con vista a la bahía, en blanco y negro"></figure><figure class="fr hc-cor"><img src="../../assets/cbb8a7e325c8.jpg" alt="Detalle del corsé del vestido al ajustarlo, en blanco y negro"></figure></div>
+<div class="hcol"><figure class="fr hc-rings"><img src="../../assets/anillos-bn.jpg" alt="Argollas en doble exposición con rosas, en blanco y negro"></figure><figure class="fr hc-walk"><img src="../../assets/ac4c9af7a94b.jpg" alt="Sesión de pareja en un parque"></figure><figure class="fr hc-bub"><img src="../../assets/c5430bc43ebe.jpg" alt="Salida de los novios entre burbujas e invitados, en blanco y negro"></figure><figure class="fr hc-bal"><img src="../../assets/ad386fe4bfd7.jpg" alt="Novios frente a frente en un balcón con vista a la bahía, en blanco y negro"></figure><figure class="fr hc-cor"><img src="../../assets/cbb8a7e325c8.jpg" alt="Detalle del corsé del vestido al ajustarlo, en blanco y negro"></figure></div>
 <div class="cover-id">
 <p class="w it">weddings</p>
 <h1 class="logo"><img src="../../assets/85394c5534aa.png" alt="Camila Escandar"></h1>
 </div>
+</div></div>
+<div class="cover-band"><div class="wrap">
 <div class="cover-meta">
 <p class="claim it">For the moments that become memories.</p>
 <p>Fotografía de bodas y sesiones de pareja, nostálgica y cinematográfica, delicada y real.</p>
