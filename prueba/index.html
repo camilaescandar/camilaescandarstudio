@@ -8,14 +8,14 @@
 <meta name="description" content="Estudio de fotografía, video y contenido para marcas en Santiago de Chile.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Condensed:ital,wght@0,400;0,500;1,400&family=Schibsted+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Condensed:ital,wght@0,400;0,500;1,400&family=Bodoni+Moda:ital,opsz@1,6..96&family=Schibsted+Grotesk:wght@400;500&display=swap" rel="stylesheet">
 <style>
-:root{--cream:#fff7ec;--brown:#442f2a;--blush:#f5cbd7;--noir:#070d0d;--mute:#7a625c;--pad:clamp(18px,4vw,56px);--gap:clamp(12px,1.6vw,24px);
+:root{--script:"Bodoni Moda",Georgia,serif;--cream:#f8f1e7;--white:#ffffff;--brown:#442f2a;--blush:#ead3d6;--noir:#0d1111;--mute:#7a625c;--pad:clamp(18px,4vw,56px);--gap:clamp(12px,1.6vw,24px);
 --serif:"Libre Caslon Condensed","Libre Caslon Text",Didot,"Bodoni 72",Georgia,serif}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--cream);color:var(--brown);font:400 16px/1.6 "Schibsted Grotesk",system-ui,sans-serif;overflow-x:hidden}
-body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:100;background:url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.27 0 0 0 0 0.18 0 0 0 0 0.16 0 0 0 .55 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");opacity:.07;mix-blend-mode:multiply}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:100;background:url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.27 0 0 0 0 0.18 0 0 0 0 0.16 0 0 0 .55 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"),url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='420' height='420'%3E%3Cfilter id='p'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.012 .09' numOctaves='3' seed='4' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .27 0 0 0 0 .18 0 0 0 0 .16 0 0 0 .5 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23p)'/%3E%3C/svg%3E");opacity:.09;mix-blend-mode:multiply}
 img,video{display:block;max-width:100%}
 a{color:inherit;text-decoration-thickness:1px;text-underline-offset:4px}
 :focus-visible{outline:2px solid currentColor;outline-offset:3px}
@@ -141,14 +141,18 @@ footer nav{display:flex;flex-wrap:wrap;gap:8px 24px}
 
 /* difusión de fondos */
 body{background:var(--cream)}
-.hero{background:radial-gradient(60% 70% at 88% 18%,rgba(245,203,215,.75),transparent 70%),radial-gradient(55% 60% at 8% 92%,rgba(245,203,215,.45),transparent 70%),radial-gradient(40% 50% at 55% 60%,rgba(68,47,42,.06),transparent 70%),var(--cream)}
 .photo .feat,.frame{position:relative}
+.it{font-family:var(--script);font-style:italic;font-weight:400;letter-spacing:0}
+.hero .intro .tag{font-family:var(--script);font-style:italic;font-size:clamp(22px,2vw,30px);line-height:1.2}
+.work .kicker{margin:0 0 10px;font-size:22px;color:var(--blush)}
+.contact .kicker{grid-column:1/13;margin:0 0 6px;font-size:clamp(22px,2vw,28px)}
+.about .quote{font-family:var(--script);font-style:italic;font-size:clamp(24px,2.3vw,32px);line-height:1.25}
 .snd{z-index:2}
-.work{background:radial-gradient(55% 45% at 85% 12%,rgba(68,47,42,.85),transparent 70%),radial-gradient(50% 40% at 10% 70%,rgba(68,47,42,.55),transparent 70%),radial-gradient(40% 30% at 70% 95%,rgba(245,203,215,.10),transparent 70%),var(--noir)}
-.photo{background:radial-gradient(55% 45% at 80% 20%,rgba(255,247,236,.75),transparent 70%),radial-gradient(60% 50% at 15% 85%,rgba(255,247,236,.55),transparent 70%),radial-gradient(45% 40% at 50% 50%,rgba(68,47,42,.07),transparent 70%),var(--blush)}
-.about{background:radial-gradient(50% 60% at 95% 40%,rgba(245,203,215,.6),transparent 70%),radial-gradient(45% 50% at 0% 0%,rgba(245,203,215,.4),transparent 70%),var(--cream)}
-.services{background:radial-gradient(55% 50% at 90% 10%,rgba(245,203,215,.22),transparent 70%),radial-gradient(55% 55% at 5% 95%,rgba(7,13,13,.55),transparent 70%),var(--brown)}
-.contact{background:radial-gradient(55% 55% at 15% 15%,rgba(255,247,236,.7),transparent 70%),radial-gradient(50% 50% at 90% 90%,rgba(68,47,42,.12),transparent 70%),var(--blush)}
+.work{background:var(--noir)}
+.photo{background:var(--blush)}
+.about{background:var(--white)}
+.services{background:var(--brown)}
+.contact{background:var(--blush)}
 .hero .what p{margin:0}
 .hero .intro .disc{font-size:15px;letter-spacing:.02em}
 .hero .intro .tag{font-size:clamp(28px,2.6vw,40px);line-height:1.05;margin-top:6px !important}
@@ -195,7 +199,7 @@ body{background:var(--cream)}
 <h1 class="serif"><span>Fotografía,</span><span>video y</span><span>contenido</span><span>para marcas.</span></h1>
 <div class="collage"><figure class="h0"><img src="../assets/44267cbed9eb.jpg" alt="Fotografía · Dior"></figure><figure class="h1"><img src="../assets/bfaea4a55663.jpg" alt="Fotografía · Miu Miu · MJ"></figure><figure class="h2"><img src="../assets/retrato-sweater-bn.jpg" alt="Fotografía · Retrato"></figure><figure class="h3"><img src="../assets/9a2eaf58a164.jpg" alt="Fotografía · Kadú"></figure></div>
 <div class="intro">
-<div class="what"><p class="disc">Fotografía | Video | Creación de contenido | Marketing digital</p><p class="tag serif">contenido con estética y estrategia.</p></div>
+<div class="what"><p class="disc">Fotografía | Video | Creación de contenido | Marketing digital</p><p class="tag">contenido con estética y estrategia.</p></div>
 <ul class="links"><li><a href="https://wa.me/56974323120">WhatsApp</a></li><li><a href="mailto:camilaescandarstudio@gmail.com">Email</a></li><li><a href="https://www.instagram.com/camilaescandarstudio/">Instagram</a></li></ul>
 </div>
 </div></div>
@@ -204,6 +208,7 @@ body{background:var(--cream)}
 <section class="work" id="trabajo"><div class="wrap">
 <h2 class="spine serif">Trabajo</h2>
 <div>
+<p class="kicker it">fotografía · films · content</p>
 <p class="lead">Reels y campañas para marcas, junto a creadoras de contenido. Toca “Sonido” para escuchar cada video.</p>
 <ul class="reels">
 <li class="reel"><div class="frame"><video src="../assets/6e2ec4e079f4.mp4" poster="../assets/745729d6731b.jpg" muted loop playsinline preload="none" aria-label="Reel Dior"></video><button class="snd" type="button" aria-pressed="false">Sonido</button></div><p class="cap"><span class="brand">Dior</span></p></li>
@@ -269,6 +274,7 @@ body{background:var(--cream)}
 </div></section>
 
 <section class="contact" id="contacto"><div class="wrap">
+<p class="kicker it">¿creamos algo juntos?</p>
 <h2 class="serif"><span>Trabajemos</span><span>juntos</span></h2>
 <div class="direct">
 <p>Cuéntame de tu marca y lo que tienes en mente. Te respondo con una propuesta a tu medida.</p>
