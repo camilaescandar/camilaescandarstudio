@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Camila Escandar Studio · Fotografía, video y contenido para marcas</title>
+<meta name="description" content="Estudio de fotografía, video y contenido para marcas en Santiago de Chile.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Condensed:ital,wght@0,400;0,500;1,400&family=Bodoni+Moda:ital,opsz@1,6..96&family=Schibsted+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--script:"Bodoni Moda",Georgia,serif;--cream:#faf7f2;--white:#ffffff;--brown:#070d0d;--blush:#f2cdd5;--noir:#070d0d;--mute:#6d6a66;--pad:clamp(18px,4vw,56px);--gap:clamp(12px,1.6vw,24px);
+--serif:"Libre Caslon Condensed","Libre Caslon Text",Didot,"Bodoni 72",Georgia,serif}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;overflow-x:clip}
+body{margin:0;background:var(--cream);color:var(--brown);font:400 16px/1.6 "Schibsted Grotesk",system-ui,sans-serif;overflow-x:hidden}
+img,video{display:block;max-width:100%}
+a{color:inherit;text-decoration-thickness:1px;text-underline-offset:4px}
+:focus-visible{outline:2px solid currentColor;outline-offset:3px}
+::selection{background:var(--blush);color:var(--brown)}
+.serif{font-family:var(--serif);font-weight:400;letter-spacing:-.015em}
+.wrap{max-width:1480px;margin:0 auto;padding:0 var(--pad)}
+figure{margin:0}
+figcaption{font-size:12px;line-height:1.3;margin-top:8px;color:var(--mute)}
+
+/* barra */
+.bar{position:sticky;top:0;z-index:30;background:var(--cream);border-bottom:1px solid rgba(7,13,13,.14)}
+.bar .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;height:62px}
+.bar img{height:24px;width:auto;filter:brightness(0)}
+.bar nav{display:flex;gap:28px;font-size:14px}
+.bar nav a{text-decoration:none;padding:8px 0}
+.bar nav a:hover{text-decoration:underline}
+.bar nav .cta{background:var(--brown);color:var(--cream);padding:8px 16px}
+.bar nav .cta:hover{text-decoration:none;background:var(--noir)}
+
+/* portada collage */
+.hero{position:relative;padding:clamp(36px,5vw,72px) 0 clamp(56px,7vw,120px)}
+.hero .wrap{position:relative}
+.hero h1{position:relative;z-index:2;margin:0;font-size:clamp(64px,12.4vw,200px);line-height:.84;letter-spacing:-.025em;max-width:9.5ch}
+.hero h1 span{display:block}
+.hero h1 span:nth-child(2){padding-left:1.1ch}
+.hero h1 span:nth-child(4){padding-left:.55ch}
+.hero figure{position:absolute;z-index:1}
+.hero figure img{width:100%;aspect-ratio:2/3;object-fit:cover}
+.h0{right:var(--pad);top:0;width:21%}
+.h1{right:calc(var(--pad) + 25%);top:30%;width:14%}
+.h2{right:calc(var(--pad) + 6%);top:62%;width:15%}
+.h3{left:58%;top:-2%;width:9%}
+.hero .intro{position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,38ch) auto;gap:16px 48px;align-items:end;margin-top:clamp(32px,4vw,56px)}
+.hero .intro p{margin:0;font-size:17px}
+.links{display:flex;flex-wrap:wrap;gap:6px 22px;margin:0;padding:0;list-style:none;font-size:15px}
+
+.strip{background:var(--brown);padding:14px 0;overflow:hidden}
+.strip .track{display:flex;gap:6px;height:clamp(180px,20vw,280px);width:max-content;animation:mq 160s linear infinite}
+.strip img{height:100%;width:auto;aspect-ratio:2/3;object-fit:cover;flex:none}
+.strip:hover .track{animation-play-state:paused}
+@keyframes mq{to{transform:translateX(calc(-50% - 3px))}}
+
+section{position:relative;padding:clamp(72px,9vw,140px) 0}
+
+/* trabajo: noir con lomo vertical */
+.work{background:var(--noir);color:var(--cream)}
+.work .wrap{display:grid;grid-template-columns:auto minmax(0,1fr);gap:clamp(24px,4vw,64px)}
+.spine{position:sticky;top:96px;align-self:start;margin:0;writing-mode:vertical-rl;transform:rotate(180deg);font-size:clamp(64px,6.6vw,104px);line-height:.8;color:var(--blush);white-space:nowrap}
+.work .lead{margin:0 0 clamp(32px,4vw,56px);max-width:44ch;color:rgba(255,247,236,.72)}
+.reels{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:56px var(--gap)}
+.reel:nth-child(4n+2){margin-top:clamp(40px,6vw,110px)}
+.reel:nth-child(4n+3){margin-top:clamp(16px,2vw,36px)}
+.reel:nth-child(4n+4){margin-top:clamp(72px,9vw,160px)}
+.frame{position:relative}
+.reel video{width:100%;aspect-ratio:9/16;object-fit:cover;background:#1a1f1f}
+.snd{position:absolute;left:10px;bottom:10px;padding:6px 11px;font:500 12px/1.2 "Schibsted Grotesk",sans-serif;background:var(--cream);color:var(--brown);border:0;cursor:pointer}
+.snd[aria-pressed="true"]{background:var(--blush)}
+.cap{margin:12px 0 0;display:flex;flex-direction:column;gap:2px}
+.cap .brand{font-family:var(--serif);font-size:26px;line-height:1.05}
+.cap .who{font-size:13px;color:rgba(255,247,236,.62)}
+
+/* fotografía: página rosa */
+.photo{background:var(--white)}
+.photo .top{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:var(--gap);align-items:end;margin-bottom:clamp(40px,5vw,80px)}
+.photo .feat{grid-column:1/7;grid-row:1}
+.photo .feat img{width:100%;height:auto}
+.photo h2{grid-column:6/13;grid-row:1;align-self:start;position:relative;z-index:2;margin:clamp(-12px,-1vw,0) 0 0;font-size:clamp(52px,8.2vw,140px);line-height:.8;letter-spacing:-.03em}
+.photo h2 span{display:block}
+.photo h2 span:last-child{padding-left:1.4ch}
+.photo .note{grid-column:8/12;grid-row:1;align-self:end;margin:0;max-width:30ch}
+.wall{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:var(--gap)}
+.wall .ph{width:calc((100% - 2*var(--gap))/3)}
+.ph{margin:0}
+.ph img{width:100%;height:auto}
+.wall .ph:nth-child(3n+2) img{width:78%;margin:0 auto}
+
+/* sobre mí */
+.about .wrap{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:var(--gap);align-items:center}
+.ab-photo{grid-column:1/7;position:relative;margin-right:clamp(0px,2vw,24px)}
+.portrait{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover}
+.flor{position:absolute;width:clamp(120px,17vw,250px);height:auto;right:clamp(-110px,-7vw,-40px);bottom:clamp(-60px,-4vw,-24px);transform:rotate(-14deg);filter:drop-shadow(0 6px 10px rgba(7,13,13,.12))}
+.ab-text{grid-column:8/13;padding-top:24px}
+.about .kicker{margin:0 0 14px;font-size:22px;color:#9a6b75}
+.about h2{margin:0 0 28px;font-size:clamp(60px,7vw,118px);line-height:.86}
+.about .quote{margin:0 0 28px;max-width:22ch;padding-left:18px;border-left:1px solid var(--noir)}
+.about .cols{max-width:44ch;font-size:16px}
+.about .cols p{margin:0 0 1em}
+.about .role{font-weight:500}
+.about .cred{margin-top:28px !important;padding-top:14px;border-top:1px solid rgba(7,13,13,.2);font-size:14px;color:var(--mute)}
+
+/* servicios: página café */
+.services{background:var(--brown);color:var(--cream)}
+.services .head{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:var(--gap);align-items:end;margin-bottom:clamp(32px,4vw,56px)}
+.services h2{grid-column:1/8;margin:0;font-size:clamp(72px,10vw,168px);line-height:.82}
+.services .head p{grid-column:9/13;margin:0;color:rgba(255,247,236,.75);max-width:34ch}
+.svc{list-style:none;margin:0;padding:0;border-top:1px solid rgba(255,247,236,.35)}
+.svc li{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:var(--gap);padding:26px 0;border-bottom:1px solid rgba(255,247,236,.18)}
+.svc h3{grid-column:1/7;margin:0;font-family:var(--serif);font-weight:400;font-size:clamp(32px,3.6vw,56px);line-height:1}
+.svc p{grid-column:8/13;margin:0;align-self:center;max-width:44ch;color:rgba(255,247,236,.82)}
+.bodas{margin:32px 0 0;font-size:15px}
+
+/* contacto: página rosa */
+.contact{background:var(--blush)}
+.contact .wrap{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:var(--gap)}
+.contact h2{grid-column:1/13;margin:0 0 clamp(36px,4vw,64px);font-size:clamp(72px,14vw,240px);line-height:.8;letter-spacing:-.03em}
+.contact h2 span{display:block}
+.contact h2 span:last-child{padding-left:2ch}
+.direct{grid-column:1/5;display:flex;flex-direction:column;gap:12px}
+.direct p{margin:0 0 8px;max-width:30ch}
+.direct a{font-family:var(--serif);font-size:26px;line-height:1.1;text-decoration:none;border-bottom:1px solid currentColor;align-self:flex-start}
+form{grid-column:6/13;display:grid;grid-template-columns:1fr 1fr;gap:26px var(--gap)}
+label{display:flex;flex-direction:column;gap:6px;font-size:13px}
+label.full{grid-column:1/-1}
+input,select,textarea{font:inherit;font-size:17px;color:var(--brown);background:transparent;border:0;border-bottom:1px solid var(--brown);border-radius:0;padding:8px 0;min-height:44px;width:100%;-webkit-appearance:none;appearance:none}
+select{background-image:linear-gradient(45deg,transparent 50%,#070d0d 50%),linear-gradient(135deg,#070d0d 50%,transparent 50%);background-position:calc(100% - 12px) 55%,calc(100% - 7px) 55%;background-size:5px 5px;background-repeat:no-repeat}
+textarea{min-height:120px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:none;border-bottom-width:2px}
+.send{grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:center;gap:20px}
+button[type=submit]{font:500 16px "Schibsted Grotesk",sans-serif;background:var(--brown);color:var(--cream);border:0;padding:16px 36px;cursor:pointer}
+button[type=submit]:hover{background:var(--noir)}
+button:disabled{opacity:.5}
+#estado{margin:0}
+
+footer{background:var(--noir);color:var(--cream)}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:16px;padding-top:32px;padding-bottom:32px;font-size:14px}
+footer img{height:22px;width:auto}
+footer nav{display:flex;flex-wrap:wrap;gap:8px 24px}
+
+/* difusión de fondos */
+body{background:var(--cream)}
+.photo .feat,.frame{position:relative}
+.it{font-family:var(--script);font-style:italic;font-weight:400;letter-spacing:0}
+.hero .intro .tag{font-family:var(--script);font-style:italic;font-size:clamp(22px,2vw,30px);line-height:1.2}
+.work .kicker{margin:0 0 10px;font-size:22px;color:var(--blush)}
+.contact .kicker{grid-column:1/13;margin:0 0 6px;font-size:clamp(22px,2vw,28px)}
+.about .quote{font-family:var(--script);font-style:italic;font-size:clamp(24px,2.2vw,31px);line-height:1.28}
+/* papel */
+.tex{position:relative;isolation:isolate}
+.tex::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;opacity:.35;background:url("../assets/papel.webp") repeat 0 0/819px auto}
+.work.tex::before,.services.tex::before,footer.tex::before,.strip.tex::before{opacity:.25}
+.bar.tex{position:sticky}
+/* portada logo */
+.hero2{padding:clamp(28px,4vw,56px) 0 clamp(36px,4vw,64px)}
+.h2-top{display:flex;justify-content:space-between;gap:16px;margin:0 0 clamp(28px,4vw,56px);padding-bottom:14px;border-bottom:1px solid var(--noir);font-size:14px}
+.h2-top .it{font-size:18px;line-height:1}
+.logo-h{margin:0;line-height:0;max-width:1240px;margin-inline:auto}
+.logo-h img{width:100%;height:auto;filter:brightness(0)}
+.h2-meta{display:grid;grid-template-columns:1.2fr 1fr auto;gap:16px 40px;align-items:baseline;margin-top:clamp(28px,3.5vw,52px);padding-top:16px;border-top:1px solid var(--noir)}
+.h2-meta p{margin:0}
+.h2-meta .disc{font-size:15px}
+.h2-meta .tag{font-size:clamp(22px,2vw,30px);line-height:1.15}
+.h2-col{display:flex;justify-content:center;align-items:flex-start;gap:clamp(14px,2.2vw,32px);margin:0 0 clamp(28px,3.5vw,52px)}
+.h2-col figure{flex:none}
+.h2-col img{height:clamp(200px,22vw,320px);width:auto;aspect-ratio:2/3;object-fit:cover}
+.h2-col .c1 img{height:clamp(190px,20vw,292px)}.h2-col .c2 img{height:clamp(190px,20.5vw,300px)}.h2-col .c3 img{height:clamp(196px,21vw,306px)}
+.h2-col .c1{margin-top:clamp(24px,3vw,44px)}.h2-col .c2{margin-top:clamp(8px,1vw,14px)}.h2-col .c3{margin-top:clamp(36px,4.2vw,60px)}
+@media (max-width:760px){.h2-col{gap:8px}.h2-col img{height:auto !important;width:100%}.h2-col figure{flex:1 1 0}.h2-col figure:nth-child(n){margin-top:0}.h2-col .c1,.h2-col .c3{margin-top:22px}}
+.h3-head{text-align:center;margin:0 0 clamp(28px,3.5vw,48px)}
+.h3-head h1{margin:0;font-size:clamp(56px,9vw,150px);line-height:.9;letter-spacing:-.02em}
+.h3-head .sub{margin:clamp(10px,1.4vw,20px) 0 0;font-size:clamp(22px,2.7vw,42px);line-height:1.15}
+.h3-foot{display:grid;grid-template-columns:1fr auto 1fr;align-items:end;gap:16px 40px;padding-top:18px;border-top:1px solid var(--noir)}
+.h3-logo{grid-column:2;grid-row:1;width:clamp(240px,30vw,460px);height:auto;filter:brightness(0);justify-self:center}
+.h3-foot .tag{grid-column:1;grid-row:1;margin:0;font-size:clamp(20px,1.8vw,26px);line-height:1.2}
+.h3-foot .links{grid-column:3;grid-row:1;justify-self:end}
+@media (max-width:760px){.h3-foot{grid-template-columns:1fr}.h3-logo,.h3-foot .tag,.h3-foot .links{grid-column:1;grid-row:auto;justify-self:center;text-align:center}.h3-logo{width:70%;margin-bottom:6px}}
+.bar .logo-mini{display:none}.bar .wrap{justify-content:flex-end}.bar.scrolled .wrap{justify-content:space-between}.bar.scrolled .logo-mini{display:block}
+@media (max-width:760px){.h2-top{font-size:12px;flex-wrap:wrap}.h2-top .it{order:3;flex-basis:100%;text-align:center;font-size:15px}.h2-meta{grid-template-columns:1fr}}
+.btns{display:flex;flex-direction:column;gap:10px;margin-top:8px;width:100%;max-width:340px}
+.direct .btn{display:flex;flex-direction:column;align-items:flex-start;gap:2px;padding:16px 20px;border:1px solid var(--noir);text-decoration:none;font-family:"Schibsted Grotesk",sans-serif;border-bottom-width:1px;align-self:stretch}
+.btn .b-t{font-family:var(--serif);font-size:28px;line-height:1}
+.btn .b-s{font-size:13px;overflow-wrap:anywhere}
+.btn-solid{background:var(--noir);color:var(--cream)}
+.btn-line{background:transparent;color:var(--noir)}
+.btn-solid:hover{background:transparent;color:var(--noir)}
+.btn-line:hover{background:var(--noir);color:var(--cream)}
+.snd{z-index:2}
+.work{background:var(--noir)}
+.photo{background:var(--white)}
+.about{background:var(--cream);overflow-x:clip}
+.services{background:var(--brown)}
+.contact{background:var(--blush)}
+.hero .what p{margin:0}
+.hero .intro .disc{font-size:15px;letter-spacing:.02em}
+.hero .intro .tag{font-size:clamp(28px,2.6vw,40px);line-height:1.05;margin-top:6px !important}
+@media (max-width:1000px){
+ .reels{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .reel:nth-child(n){margin-top:0} .reel:nth-child(3n+2){margin-top:60px}
+ .wall .ph{width:calc((100% - var(--gap))/2)}
+}
+@media (max-width:760px){
+ .bar .wrap{height:auto;flex-direction:column;align-items:flex-start;gap:4px;padding-top:12px;padding-bottom:8px}
+ .bar nav{width:100%;gap:18px;overflow-x:auto;scrollbar-width:none} .bar nav::-webkit-scrollbar{display:none} .bar nav a{white-space:nowrap}
+ .hero h1{font-size:clamp(56px,17vw,96px);max-width:none}
+ .hero .collage{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin-top:20px}
+ .hero figure{position:static;width:auto}
+ .h0{grid-column:3/7;grid-row:1} .h1{grid-column:1/3;grid-row:1;align-self:end;margin-bottom:-40px}
+ .h2{grid-column:1/4;grid-row:2;margin-top:52px} .h3{grid-column:4/7;grid-row:2;margin-top:12px}
+ .hero .intro{grid-template-columns:1fr}
+ .work .wrap{grid-template-columns:1fr}
+ .spine{position:static;writing-mode:horizontal-tb;transform:none;font-size:clamp(48px,14vw,80px);white-space:normal}
+ .reels{grid-template-columns:repeat(2,minmax(0,1fr));gap:36px 12px}
+ .reel:nth-child(n){margin-top:0} .reel:nth-child(even){margin-top:48px}
+ .photo .feat,.photo h2,.photo .note{grid-column:1/-1;grid-row:auto}
+ .photo h2{margin:-0.42em 0 0}
+ .photo .note{margin-top:20px}
+ .wall{gap:10px}.wall .ph{width:calc((100% - 10px)/2)} .ph{margin:0} .wall .ph:nth-child(n) img{width:100%}
+ .ab-photo,.ab-text{grid-column:1/-1;margin-right:0}
+ .ab-photo{width:86%;margin-bottom:64px}
+ .flor{right:-22%;bottom:-48px;width:42%}
+ .ab-text{padding-top:0}
+ .services h2,.services .head p{grid-column:1/-1} .services .head p{margin-top:14px}
+ .svc h3,.svc p{grid-column:1/-1} .svc p{margin-top:8px}
+ .direct,form{grid-column:1/-1} .direct{margin-bottom:44px} form{grid-template-columns:1fr}
+ .contact h2 span:last-child{padding-left:.8ch}
+}
+@media (prefers-reduced-motion:reduce){.strip .track{animation:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="bar tex"><div class="wrap">
+<a class="logo-mini" href="/" aria-label="Camila Escandar Studio, inicio"><img src="../assets/85394c5534aa.png" alt="Camila Escandar Studio"></a>
+<nav aria-label="Principal"><a href="#trabajo">Work</a><a href="#fotografia">Fotografía</a><a href="#sobre-mi">Sobre mí</a><a href="#servicios">Servicios</a><a href="/weddings/">Bodas</a><a class="cta" href="#contacto">Contacto</a></nav>
+</div></header>
+
+<main>
+<div class="hero2 tex"><div class="wrap">
+<p class="h2-top"><span>Santiago, Chile</span><span class="it">Creatividad · Intención · Storytelling</span><span>est. 2026</span></p>
+<div class="h2-col"><figure class="c0"><img src="../assets/44267cbed9eb.jpg" alt="Fotografía · Dior"></figure><figure class="c1"><img src="../assets/bfaea4a55663.jpg" alt="Fotografía · Miu Miu · MJ"></figure><figure class="c2"><img src="../assets/9a2eaf58a164.jpg" alt="Fotografía · Kadú"></figure><figure class="c3"><img src="../assets/retrato-sweater-bn.jpg" alt="Fotografía · Retrato"></figure></div>
+<div class="h3-head">
+<h1 class="serif">Estudio creativo</h1>
+<p class="serif sub">Fotografía | Video | Creación de contenido | Marketing digital</p>
+</div>
+<div class="h3-foot">
+<img class="h3-logo" src="../assets/85394c5534aa.png" alt="Camila Escandar Studio">
+<p class="tag it">contenido con estética y estrategia.</p>
+<ul class="links"><li><a href="https://wa.me/56974323120">WhatsApp</a></li><li><a href="mailto:camilaescandarstudio@gmail.com">Email</a></li><li><a href="https://www.instagram.com/camilaescandarstudio/">Instagram</a></li></ul>
+</div>
+</div></div>
+<div class="strip" role="img" aria-label="Selección de fotografías de proyectos"><div class="track"><img src="../assets/d6d6b99bb790.jpg" alt="" loading="lazy"><img src="../assets/b5dd75060368.jpg" alt="" loading="lazy"><img src="../assets/95b9a687515d.jpg" alt="" loading="lazy"><img src="../assets/c07015af942a.jpg" alt="" loading="lazy"><img src="../assets/5e0a4f850d30.jpg" alt="" loading="lazy"><img src="../assets/296ffc55430e.jpg" alt="" loading="lazy"><img src="../assets/a8e428f30a2a.jpg" alt="" loading="lazy"><img src="../assets/522c4b44493e.jpg" alt="" loading="lazy"><img src="../assets/c2e27decbf25.jpg" alt="" loading="lazy"><img src="../assets/b89f75624da0.jpg" alt="" loading="lazy"><img src="../assets/5bbbb79acb11.jpg" alt="" loading="lazy"><img src="../assets/32fbb16ecc51.jpg" alt="" loading="lazy"><img src="../assets/fa834ac6f1a7.jpg" alt="" loading="lazy"><img src="../assets/fr-carro.jpg" alt="" loading="lazy"><img src="../assets/5f2450eb84e8.jpg" alt="" loading="lazy"><img src="../assets/221dfbb65a84.jpg" alt="" loading="lazy"><img src="../assets/ff1fe60fb983.jpg" alt="" loading="lazy"><img src="../assets/3fd2e217d33c.jpg" alt="" loading="lazy"><img src="../assets/c709544da2fe.jpg" alt="" loading="lazy"><img src="../assets/c477fc682460.jpg" alt="" loading="lazy"><img src="../assets/569af7ea8bce.jpg" alt="" loading="lazy"><img src="../assets/0b93864199e3.jpg" alt="" loading="lazy"><img src="../assets/927c7626a6ef.jpg" alt="" loading="lazy"><img src="../assets/9c2e1c401c9f.jpg" alt="" loading="lazy"><img src="../assets/3cad50efce39.jpg" alt="" loading="lazy"><img src="../assets/609ceb5b5a87.jpg" alt="" loading="lazy"><img src="../assets/b0086a1f8a7c.jpg" alt="" loading="lazy"><img src="../assets/170fc9ced7bb.jpg" alt="" loading="lazy"><img src="../assets/ff6364e2b526.jpg" alt="" loading="lazy"><img src="../assets/839e6eb9b107.jpg" alt="" loading="lazy"><img src="../assets/abc9e2397148.jpg" alt="" loading="lazy"><img src="../assets/f11464f7a439.jpg" alt="" loading="lazy"><img src="../assets/6b5f93d293da.jpg" alt="" loading="lazy"><img src="../assets/c53c2dd46c09.jpg" alt="" loading="lazy"><img src="../assets/c4535a1e999f.jpg" alt="" loading="lazy"><img src="../assets/d1227b5e3987.jpg" alt="" loading="lazy"><img src="../assets/35765a4a878d.jpg" alt="" loading="lazy"><img src="../assets/d6d6b99bb790.jpg" alt="" aria-hidden="true" loading="lazy"><img src="../assets/b5dd75060368.jpg" alt="" aria-hidden="true" loading="lazy"><img src="../assets/95b9a687515d.jpg" alt="" aria-hidden="true" loading="lazy"><img src="../assets/c07015af942a.jpg" alt="" aria-hidden="true" loading="lazy"><img src="../assets/5e0a4f850d30.jpg" alt="" aria-hidden="true" loading="lazy"><img src="../assets/296ffc55430e.jpg" alt="" aria-hidden="true" loading="lazy"><img src="../assets/a8e428f30a2a.jpg" alt="" aria-hidden="true" loading="lazy"><img src="../assets/522c4b44493e.jpg" alt="" aria-hidden="true" loading="lazy"><img src="../assets/c2e27decbf25.jpg" alt="" aria-hidden="true" loading="lazy"><img src="../assets/b89f75624da0.jpg" alt="" aria-hidden="true" loading="lazy"><img src="../assets/5bbbb79acb11.jpg" alt="" aria-hidden="true" loading="lazy"><img src="../assets/32fbb16ecc51.jpg" alt="" aria-hidden="true" loading="lazy"><img src="../assets/fa834ac6f1a7.jpg" alt="" aria-hidden="true" loading="lazy"><img src="../assets/fr-carro.jpg" alt="" aria-hidden="true" loading="lazy"><img src="../assets/5f2450eb84e8.jpg" alt="" aria-hidden="true" loading="lazy"><img src="../assets/221dfbb65a84.jpg" alt="" aria-hidden="true" loading="lazy"><img src="../assets/ff1fe60fb983.jpg" alt="" aria-hidden="true" loading="lazy"><img src="../assets/3fd2e217d33c.jpg" alt="" aria-hidden="true" loading="lazy"><img src="../assets/c709544da2fe.jpg" alt="" aria-hidden="true" loading="lazy"><img src="../assets/c477fc682460.jpg" alt="" aria-hidden="true" loading="lazy"><img src="../assets/569af7ea8bce.jpg" alt="" aria-hidden="true" loading="lazy"><img src="../assets/0b93864199e3.jpg" alt="" aria-hidden="true" loading="lazy"><img src="../assets/927c7626a6ef.jpg" alt="" aria-hidden="true" loading="lazy"><img src="../assets/9c2e1c401c9f.jpg" alt="" aria-hidden="true" loading="lazy"><img src="../assets/3cad50efce39.jpg" alt="" aria-hidden="true" loading="lazy"><img src="../assets/609ceb5b5a87.jpg" alt="" aria-hidden="true" loading="lazy"><img src="../assets/b0086a1f8a7c.jpg" alt="" aria-hidden="true" loading="lazy"><img src="../assets/170fc9ced7bb.jpg" alt="" aria-hidden="true" loading="lazy"><img src="../assets/ff6364e2b526.jpg" alt="" aria-hidden="true" loading="lazy"><img src="../assets/839e6eb9b107.jpg" alt="" aria-hidden="true" loading="lazy"><img src="../assets/abc9e2397148.jpg" alt="" aria-hidden="true" loading="lazy"><img src="../assets/f11464f7a439.jpg" alt="" aria-hidden="true" loading="lazy"><img src="../assets/6b5f93d293da.jpg" alt="" aria-hidden="true" loading="lazy"><img src="../assets/c53c2dd46c09.jpg" alt="" aria-hidden="true" loading="lazy"><img src="../assets/c4535a1e999f.jpg" alt="" aria-hidden="true" loading="lazy"><img src="../assets/d1227b5e3987.jpg" alt="" aria-hidden="true" loading="lazy"><img src="../assets/35765a4a878d.jpg" alt="" aria-hidden="true" loading="lazy"></div></div>
+
+<section class="work tex" id="trabajo"><div class="wrap">
+<h2 class="spine serif">Selected work</h2>
+<div>
+<p class="kicker it">fotografía · films · content</p>
+<p class="lead">Reels y campañas para marcas. Toca “Sonido” para escuchar cada video.</p>
+<ul class="reels">
+<li class="reel"><div class="frame"><video src="../assets/6e2ec4e079f4.mp4" poster="../assets/745729d6731b.jpg" muted loop playsinline preload="none" aria-label="Reel Dior"></video><button class="snd" type="button" aria-pressed="false">Sonido</button></div><p class="cap"><span class="brand">Dior</span><span class="who">“Un vistazo”, con Elisa</span></p></li>
+<li class="reel"><div class="frame"><video src="../assets/682aeb4120f0.mp4" poster="../assets/f0dc64eb124c.jpg" muted loop playsinline preload="none" aria-label="Reel Miu Miu — María José Beas"></video><button class="snd" type="button" aria-pressed="false">Sonido</button></div><p class="cap"><span class="brand">Miu Miu</span><span class="who">con María José Beas</span></p></li>
+<li class="reel"><div class="frame"><video src="../assets/a306e208dbc5.mp4" poster="../assets/937fbdc94beb.jpg" muted loop playsinline preload="none" aria-label="Reel Miu Miu — Valentina Rodríguez"></video><button class="snd" type="button" aria-pressed="false">Sonido</button></div><p class="cap"><span class="brand">Miu Miu</span><span class="who">con Valentina Rodríguez</span></p></li>
+<li class="reel"><div class="frame"><video src="../assets/5b63eaf8cb1e.mp4" poster="../assets/7fc6c32b8813.jpg" muted loop playsinline preload="none" aria-label="Reel Lancôme — Nachi Valdés"></video><button class="snd" type="button" aria-pressed="false">Sonido</button></div><p class="cap"><span class="brand">Lancôme</span><span class="who">con Nachi Valdés</span></p></li>
+<li class="reel"><div class="frame"><video src="../assets/eb04715122fd.mp4" poster="../assets/255ecab54ca8.jpg" muted loop playsinline preload="none" aria-label="Reel Maison Italia — Aura Studio"></video><button class="snd" type="button" aria-pressed="false">Sonido</button></div><p class="cap"><span class="brand">Maison Italia</span><span class="who">Dirección creativa: Aura Studio</span></p></li>
+<li class="reel"><div class="frame"><video src="../assets/95e9b3a63e36.mp4" poster="../assets/1d5664f2ee79.jpg" muted loop playsinline preload="none" aria-label="Reel YSL — @melissasosafit"></video><button class="snd" type="button" aria-pressed="false">Sonido</button></div><p class="cap"><span class="brand">YSL</span><span class="who">con @melissasosafit</span></p></li>
+<li class="reel"><div class="frame"><video src="../assets/948f736c22f6.mp4" poster="../assets/ac5884422a09.jpg" muted loop playsinline preload="none" aria-label="Reel Swarovski — Fer Valenzuela"></video><button class="snd" type="button" aria-pressed="false">Sonido</button></div><p class="cap"><span class="brand">Swarovski</span><span class="who">con Fer Valenzuela</span></p></li>
+<li class="reel"><div class="frame"><video src="../assets/ec67418a68d9.mp4" poster="../assets/c6aa9329c785.jpg" muted loop playsinline preload="none" aria-label="Reel Jimmy Choo — @melissasosafit"></video><button class="snd" type="button" aria-pressed="false">Sonido</button></div><p class="cap"><span class="brand">Jimmy Choo</span><span class="who">con @melissasosafit</span></p></li>
+<li class="reel"><div class="frame"><video src="../assets/79bc765e72a4.mp4" poster="../assets/d18d2a2ed7a5.jpg" muted loop playsinline preload="none" aria-label="Reel Lancôme — @melissasosafit"></video><button class="snd" type="button" aria-pressed="false">Sonido</button></div><p class="cap"><span class="brand">Lancôme</span><span class="who">con @melissasosafit</span></p></li>
+<li class="reel"><div class="frame"><video src="../assets/916ea9fd53f3.mp4" poster="../assets/ad4579b1ff80.jpg" muted loop playsinline preload="none" aria-label="Reel Adidas — Fer Valenzuela"></video><button class="snd" type="button" aria-pressed="false">Sonido</button></div><p class="cap"><span class="brand">Adidas</span><span class="who">con Fer Valenzuela</span></p></li>
+<li class="reel"><div class="frame"><video src="../assets/2d1f6ebca93c.mp4" poster="../assets/df4a8f865b80.jpg" muted loop playsinline preload="none" aria-label="Reel Adidas — Fer Valenzuela"></video><button class="snd" type="button" aria-pressed="false">Sonido</button></div><p class="cap"><span class="brand">Adidas</span><span class="who">con Fer Valenzuela</span></p></li>
+</ul>
+</div>
+</div></section>
+
+<section class="photo tex" id="fotografia"><div class="wrap">
+<div class="top">
+<figure class="feat"><img src="../assets/0574491c17a7.jpg" alt="Fotografía · Swarovski" loading="lazy"></figure>
+<h2 class="serif"><span>More of my</span><span>photography</span></h2>
+<p class="note">Una selección de campañas, producto y retrato.</p>
+</div>
+<div class="wall">
+<figure class="ph"><img src="../assets/87b3c9c25836.jpg" alt="Fotografía · Collares FR" loading="lazy"></figure>
+<figure class="ph"><img src="../assets/450915b55906.jpg" alt="Fotografía · Miu Miu · Valentina" loading="lazy"></figure>
+<figure class="ph"><img src="../assets/22f441d7a318.jpg" alt="Fotografía · Retrato" loading="lazy"></figure>
+<figure class="ph"><img src="../assets/65008c71a558.jpg" alt="Fotografía · Collares FR" loading="lazy"></figure>
+<figure class="ph"><img src="../assets/540abc5bdc0f.jpg" alt="Fotografía · Collares FR" loading="lazy"></figure>
+<figure class="ph"><img src="../assets/a45354beb25e.jpg" alt="Fotografía · Lancôme" loading="lazy"></figure>
+<figure class="ph"><img src="../assets/3877f7c0bb9f.jpg" alt="Fotografía · Retrato" loading="lazy"></figure>
+<figure class="ph"><img src="../assets/5025b627dab8.jpg" alt="Fotografía · Collares FR" loading="lazy"></figure>
+<figure class="ph"><img src="../assets/c45a51959480.jpg" alt="Fotografía · Fast Not Junk" loading="lazy"></figure>
+<figure class="ph"><img src="../assets/2d8e62425e40.jpg" alt="Fotografía · Miu Miu · MJ" loading="lazy"></figure>
+<figure class="ph"><img src="../assets/5e1c24f0dae4.jpg" alt="Fotografía · Collares FR" loading="lazy"></figure>
+<figure class="ph"><img src="../assets/kadu-bolsos.jpg" alt="Fotografía · Kadú" loading="lazy"></figure>
+<figure class="ph"><img src="../assets/3cad50efce39.jpg" alt="Fotografía · Swarovski" loading="lazy"></figure>
+<figure class="ph"><img src="../assets/miss-dior.jpg" alt="Fotografía · Dior" loading="lazy"></figure>
+</div>
+</div></section>
+
+<section class="about tex" id="sobre-mi"><div class="wrap">
+<div class="ab-photo">
+<img class="portrait" src="../assets/camila-sobre-mi.jpg" alt="Camila Escandar con su cámara, retrato en blanco y negro">
+<img class="flor" src="../assets/flor.webp" alt="" aria-hidden="true" loading="lazy">
+</div>
+<div class="ab-text">
+<p class="kicker it">sobre mí</p>
+<h2 class="serif">Hola, soy<br>Camila</h2>
+<p class="quote">Cada pieza nace de una idea clara: que se vea hermosa y que cumpla un objetivo.</p>
+<div class="cols">
+<p class="role">Fotógrafa, filmmaker y especialista en marketing digital.</p>
+<p>Hago fotografía, video y contenido para marcas, pensando la estética y la estrategia al mismo tiempo.</p>
+<p class="cred">Ingeniera comercial (USM)<br>Diplomado en Marketing Digital (UC)</p>
+</div>
+</div>
+</div></section>
+
+<section class="services tex" id="servicios"><div class="wrap">
+<div class="head"><h2 class="serif">Servicios</h2><p>Por proyecto o en planes mensuales. Si buscas algo a tu medida, lo armamos juntas.</p></div>
+<ul class="svc">
+<li><h3>Fotografía</h3><p>Producto, lifestyle, campañas y retrato, con una estética cuidada y pensada para tus redes y tu web.</p></li>
+<li><h3>Producción audiovisual</h3><p>Reels, contenido para redes, eventos y campañas: desde la idea y la grabación hasta la edición final.</p></li>
+<li><h3>Gestión de redes y marketing digital</h3><p>Planes mensuales de contenido, estrategia, gestión de RRSS, campañas y análisis para que tu marca publique constante y con coherencia.</p></li>
+</ul>
+<p class="bodas">¿Te casas? <a href="/weddings/">Ver fotografía de bodas y parejas</a></p>
+</div></section>
+
+<section class="contact tex" id="contacto"><div class="wrap">
+<p class="kicker it">¿creamos algo juntos?</p>
+<h2 class="serif"><span>Trabajemos</span><span>juntos</span></h2>
+<div class="direct">
+<p>Cuéntame de tu marca y lo que tienes en mente.</p>
+<div class="btns"><a class="btn btn-solid" href="https://wa.me/56974323120"><span class="b-t">WhatsApp</span><span class="b-s">+56 9 7432 3120</span></a>
+<a class="btn btn-line" href="mailto:camilaescandarstudio@gmail.com"><span class="b-t">Email</span><span class="b-s">camilaescandarstudio@gmail.com</span></a></div>
+</div>
+<form id="form-studio" action="https://api.web3forms.com/submit" method="POST">
+<input type="hidden" name="access_key" value="04c02ef0-45d5-41cf-bf23-c3b99f76920f">
+<input type="hidden" name="subject" value="Nueva consulta · camilaescandarstudio.com">
+<input type="hidden" name="from_name" value="Web Camila Escandar Studio">
+<input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+<label>Nombre<input type="text" name="nombre" autocomplete="name" required></label>
+<label>Marca o creador<input type="text" name="marca" autocomplete="organization"></label>
+<label>Email<input type="email" name="email" autocomplete="email" required></label>
+<label>Teléfono<input type="tel" name="telefono" autocomplete="tel"></label>
+<label>Servicio<select name="servicio"><option value="">Elige una opción</option><option>Fotografía</option><option>Producción audiovisual</option><option>Gestión de redes y marketing digital</option><option>Otro / a medida</option></select></label>
+<label>Fecha aproximada<input type="text" name="fecha"></label>
+<label class="full">Cuéntame tu idea<textarea name="mensaje" required></textarea></label>
+<div class="send"><button type="submit">Enviar consulta</button><p id="estado" role="status"></p></div>
+</form>
+</div></section>
+</main>
+
+<footer class="tex"><div class="wrap">
+<img src="../assets/85394c5534aa.png" alt="Camila Escandar Studio">
+<nav aria-label="Redes"><a href="https://wa.me/56974323120">WhatsApp</a><a href="mailto:camilaescandarstudio@gmail.com">Email</a><a href="https://www.instagram.com/camilaescandarstudio/">Instagram</a><a href="/weddings/">Bodas</a></nav>
+<span>© 2026 Camila Escandar Studio</span>
+</div></footer>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var io = new IntersectionObserver(function (es) { es.forEach(function (e) { var v = e.target; if (e.isIntersecting) { var p = v.play(); if (p && p.catch) p.catch(function () {}); } else { v.pause(); } }); }, { threshold: 0.4 });
+  document.querySelectorAll(".reel video").forEach(function (v) { v.muted = true; io.observe(v); });
+  document.querySelectorAll(".snd").forEach(function (b) { b.addEventListener("click", function () { var v = b.previousElementSibling, on = v.muted; document.querySelectorAll(".reel video").forEach(function (o) { o.muted = true; }); document.querySelectorAll(".snd").forEach(function (o) { o.setAttribute("aria-pressed", "false"); o.textContent = "Sonido"; }); if (on) { v.muted = false; v.play(); b.setAttribute("aria-pressed", "true"); b.textContent = "Silenciar"; } }); });
+  var lm=document.querySelector(".logo-mini"), lh=document.querySelector(".h3-logo");
+  if(lm&&lh){new IntersectionObserver(function(e){document.querySelector(".bar").classList.toggle("scrolled",!e[0].isIntersecting);},{threshold:0}).observe(lh);}
+  var f = document.getElementById("form-studio"), st = document.getElementById("estado");
+  f.addEventListener("submit", function (e) {
+    e.preventDefault(); var b = f.querySelector("button"); b.disabled = true; st.textContent = "Enviando…";
+    fetch(f.action, { method: "POST", headers: { Accept: "application/json" }, body: new FormData(f) })
+      .then(function (r) { return r.json(); })
+      .then(function (j) { if (j.success) { f.reset(); st.textContent = "Consulta enviada. Te respondo pronto."; } else { st.textContent = "No se pudo enviar. Escríbeme por WhatsApp."; } })
+      .catch(function () { st.textContent = "No se pudo enviar. Escríbeme por WhatsApp."; })
+      .finally(function () { b.disabled = false; });
+  });
+});
+</script>
+</body>
+</html>
