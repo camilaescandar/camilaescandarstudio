@@ -173,6 +173,14 @@ body{background:var(--cream)}
 @media (max-width:760px){.h2-col{gap:8px}.h2-col img{height:auto !important;width:100%}.h2-col figure{flex:1 1 0}.h2-col .c1{margin-bottom:28px}.h2-col .c2{align-self:flex-end}}
 .bar .logo-mini{display:none}.bar .wrap{justify-content:flex-end}.bar.scrolled .wrap{justify-content:space-between}.bar.scrolled .logo-mini{display:block}
 @media (max-width:760px){.h2-top{font-size:12px}.h2-top .it{display:none}.h2-meta{grid-template-columns:1fr}}
+.btns{display:flex;flex-direction:column;gap:10px;margin-top:8px;width:100%;max-width:340px}
+.direct .btn{display:flex;flex-direction:column;align-items:flex-start;gap:2px;padding:16px 20px;border:1px solid var(--noir);text-decoration:none;font-family:"Schibsted Grotesk",sans-serif;border-bottom-width:1px;align-self:stretch}
+.btn .b-t{font-family:var(--serif);font-size:28px;line-height:1}
+.btn .b-s{font-size:13px;overflow-wrap:anywhere}
+.btn-solid{background:var(--noir);color:var(--cream)}
+.btn-line{background:transparent;color:var(--noir)}
+.btn-solid:hover{background:transparent;color:var(--noir)}
+.btn-line:hover{background:var(--noir);color:var(--cream)}
 .snd{z-index:2}
 .work{background:var(--noir)}
 .photo{background:var(--white)}
@@ -300,11 +308,9 @@ body{background:var(--cream)}
 <section class="services tex" id="servicios"><div class="wrap">
 <div class="head"><h2 class="serif">Servicios</h2><p>Por proyecto o en planes mensuales. Si buscas algo a tu medida, lo armamos juntas.</p></div>
 <ul class="svc">
-<li><h3>Fotografía para marcas</h3><p>Producto, lifestyle y campañas con una estética cuidada y pensada para tus redes y tu web.</p></li>
-<li><h3>Video y reels</h3><p>Desde la idea hasta la edición: reels verticales listos para publicar, con portada incluida.</p></li>
-<li><h3>Cobertura de eventos</h3><p>Fotografía y reel de tu evento, lanzamiento o activación, con entrega rápida.</p></li>
-<li><h3>Contenido mensual</h3><p>Planes de reels, fotos y carruseles para que tu marca publique constante y con coherencia.</p></li>
-<li><h3>Marketing digital</h3><p>Estrategia, campañas y análisis para que tu contenido no solo se vea bien, sino que funcione.</p></li>
+<li><h3>Fotografía</h3><p>Producto, lifestyle, campañas y retrato, con una estética cuidada y pensada para tus redes y tu web.</p></li>
+<li><h3>Producción audiovisual</h3><p>Reels, contenido para redes, eventos y campañas: desde la idea y la grabación hasta la edición final.</p></li>
+<li><h3>Gestión de redes y marketing digital</h3><p>Planes mensuales de contenido, estrategia, gestión de RRSS, campañas y análisis para que tu marca publique constante y con coherencia.</p></li>
 </ul>
 <p class="bodas">¿Te casas? <a href="/weddings/">Ver fotografía de bodas y parejas</a></p>
 </div></section>
@@ -313,9 +319,9 @@ body{background:var(--cream)}
 <p class="kicker it">¿creamos algo juntos?</p>
 <h2 class="serif"><span>Trabajemos</span><span>juntos</span></h2>
 <div class="direct">
-<p>Cuéntame de tu marca y lo que tienes en mente. Te respondo con una propuesta a tu medida.</p>
-<a href="https://wa.me/56974323120">WhatsApp +56 9 7432 3120</a>
-<a href="mailto:camilaescandarstudio@gmail.com">camilaescandarstudio@gmail.com</a>
+<p>Cuéntame de tu marca y lo que tienes en mente.</p>
+<div class="btns"><a class="btn btn-solid" href="https://wa.me/56974323120"><span class="b-t">WhatsApp</span><span class="b-s">+56 9 7432 3120</span></a>
+<a class="btn btn-line" href="mailto:camilaescandarstudio@gmail.com"><span class="b-t">Email</span><span class="b-s">camilaescandarstudio@gmail.com</span></a></div>
 </div>
 <form id="form-studio" action="https://api.web3forms.com/submit" method="POST">
 <input type="hidden" name="access_key" value="04c02ef0-45d5-41cf-bf23-c3b99f76920f">
@@ -323,10 +329,10 @@ body{background:var(--cream)}
 <input type="hidden" name="from_name" value="Web Camila Escandar Studio">
 <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
 <label>Nombre<input type="text" name="nombre" autocomplete="name" required></label>
-<label>Marca o empresa<input type="text" name="marca" autocomplete="organization"></label>
+<label>Marca o creador<input type="text" name="marca" autocomplete="organization"></label>
 <label>Email<input type="email" name="email" autocomplete="email" required></label>
 <label>Teléfono<input type="tel" name="telefono" autocomplete="tel"></label>
-<label>Servicio<select name="servicio"><option value="">Elige una opción</option><option>Fotografía</option><option>Video y reels</option><option>Cobertura de evento</option><option>Contenido mensual</option><option>Marketing digital</option><option>Otro / a medida</option></select></label>
+<label>Servicio<select name="servicio"><option value="">Elige una opción</option><option>Fotografía</option><option>Producción audiovisual</option><option>Gestión de redes y marketing digital</option><option>Otro / a medida</option></select></label>
 <label>Fecha aproximada<input type="text" name="fecha"></label>
 <label class="full">Cuéntame tu idea<textarea name="mensaje" required></textarea></label>
 <div class="send"><button type="submit">Enviar consulta</button><p id="estado" role="status"></p></div>
