@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Camila Escandar Weddings · Fotografía de bodas y parejas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Condensed:wght@400;500&family=Bodoni+Moda:ital,opsz@1,6..96&family=Schibsted+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#faf7f2;--white:#ffffff;--ink:#070d0d;--blush:#f2cdd5;--rose:#9a6b75;--mute:#6d6a66;--line:rgba(7,13,13,.16);
+--serif:"Libre Caslon Condensed","Libre Caslon Text",Didot,Georgia,serif;--it:"Bodoni Moda",Georgia,serif;--pad:clamp(20px,4.5vw,64px);--gap:clamp(10px,1.4vw,20px)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 16px/1.65 "Schibsted Grotesk",system-ui,sans-serif;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-underline-offset:4px;text-decoration-thickness:1px}
+:focus-visible{outline:1px solid var(--ink);outline-offset:3px}
+::selection{background:var(--blush)}
+.wrap{max-width:1360px;margin:0 auto;padding:0 var(--pad)}
+.it{font-family:var(--it);font-style:italic;font-weight:400}
+.serif{font-family:var(--serif);font-weight:400;letter-spacing:-.01em}
+figure{margin:0}
+.tex{position:relative;isolation:isolate}
+.tex::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;opacity:.3;background:url("../../assets/papel.webp") repeat 0 0/819px auto}
+
+.bar{position:sticky;top:0;z-index:20;background:var(--paper);border-bottom:1px solid var(--line)}
+.bar .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;height:62px}
+.bar img{height:22px;width:auto;filter:brightness(0)}
+.bar nav{display:flex;align-items:center;gap:26px;font-size:14px}
+.bar nav a{text-decoration:none;padding:6px 0}
+.bar nav a:hover{text-decoration:underline}
+.bar .cta{border:1px solid var(--ink);padding:7px 16px !important}
+.bar .cta:hover{background:var(--ink);color:var(--paper);text-decoration:none}
+
+/* portada */
+.top{display:flex;justify-content:space-between;gap:16px;margin:clamp(24px,3.5vw,44px) 0 clamp(24px,3vw,40px);padding-bottom:12px;border-bottom:1px solid var(--line);font-size:13px;color:var(--mute)}
+.top .it{font-size:16px;color:var(--ink)}
+.hero{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:var(--gap);align-items:end;padding-bottom:clamp(64px,8vw,120px)}
+.hero .ph{grid-column:1/7;position:relative}
+.hero .ph img:first-child{width:100%;aspect-ratio:4/5;object-fit:cover}
+.hero .ph .flor{position:absolute;aspect-ratio:auto;height:auto;width:clamp(90px,11vw,160px);right:clamp(-70px,-5vw,-30px);top:clamp(-50px,-3vw,-20px);transform:rotate(18deg)}
+.hero .txt{grid-column:8/13;display:flex;flex-direction:column;gap:22px;padding-bottom:8px}
+.hero .logo img{width:100%;height:auto;filter:brightness(0)}
+.hero .w{margin:-6px 0 0;font-size:clamp(34px,3.4vw,52px);line-height:1;color:var(--rose);text-align:right}
+.hero .rule{height:1px;background:var(--ink);margin:6px 0}
+.hero .claim{margin:0;font-size:clamp(24px,2.1vw,30px);line-height:1.2}
+.hero p{margin:0;max-width:36ch}
+.acts{display:flex;flex-wrap:wrap;align-items:center;gap:14px 24px;font-size:15px}
+.btn{display:inline-block;padding:12px 24px;background:var(--ink);color:var(--paper);text-decoration:none;font-size:15px}
+.btn:hover{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1px var(--ink)}
+
+/* portada editorial */
+.cover{position:relative;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:var(--gap)}
+.cover-ph{grid-column:2/12;grid-row:1}
+.cover-ph img{width:100%;height:auto;max-height:none}
+.cover-id{grid-column:1/13;grid-row:2;margin-top:clamp(-46px,-3vw,-16px);position:relative;z-index:2;display:flex;flex-direction:column;align-items:stretch}
+.cover-id .logo{margin:0 auto;width:92%;line-height:0;background:var(--paper);padding:clamp(10px,1.4vw,20px) clamp(12px,2vw,28px) 0}
+.cover-id .logo img{width:100%;height:auto;filter:brightness(0)}
+.cover-id .w{margin:0;padding:0 clamp(12px,2vw,28px) 6px;background:var(--paper);align-self:flex-end;margin-right:4% !important;font-size:clamp(34px,3.6vw,56px);line-height:1.1;color:var(--rose)}
+.cover-meta{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:var(--gap);row-gap:16px;padding:clamp(40px,5vw,72px) 0 clamp(72px,9vw,120px);align-items:start}
+.cover-meta .claim{grid-column:1/6;margin:0;font-size:clamp(28px,2.6vw,40px);line-height:1.15}
+.cover-meta p:not(.claim){grid-column:7/11;margin:0;max-width:40ch}
+.cover-meta .acts{grid-column:7/13;display:flex;flex-wrap:wrap;align-items:center;gap:12px 22px}
+.fr{border:1px solid var(--ink);background:var(--white);padding:0}
+.fr img{display:block}
+/* collage */
+.scatter{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:var(--gap);row-gap:clamp(28px,4vw,64px);align-items:start}
+.scatter figure{margin:0}
+.scatter img{width:100%;height:auto}
+.scatter figure:nth-child(6n+1){grid-column:1/6}
+.scatter figure:nth-child(6n+2){grid-column:7/11;margin-top:clamp(40px,8vw,140px)}
+.scatter figure:nth-child(6n+3){grid-column:3/7}
+.scatter figure:nth-child(6n+4){grid-column:9/13;margin-top:clamp(-40px,-3vw,-10px)}
+.scatter figure:nth-child(6n+5){grid-column:1/4;margin-top:clamp(20px,4vw,72px)}
+.scatter figure:nth-child(6n){grid-column:5/10}
+/* frase */
+.stmt{background:var(--white);text-align:center;padding:clamp(80px,10vw,150px) 0}
+.stmt h2{margin:0 auto;max-width:16ch;font-size:clamp(40px,5.4vw,84px);line-height:.98}
+.stmt p{margin:22px 0 0;font-size:13px;letter-spacing:.04em;color:var(--mute)}
+
+/* galerías */
+.gal{padding:clamp(72px,9vw,130px) 0}
+.gal .head{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:var(--gap);align-items:end;margin-bottom:clamp(32px,4vw,56px)}
+.gal h2{grid-column:1/7;margin:0;font-size:clamp(56px,7.5vw,120px);line-height:.86}
+.gal .head p{grid-column:8/13;margin:0;max-width:36ch}
+.gal .head .it{display:block;font-size:22px;color:var(--rose);margin-bottom:6px}
+.grid{columns:3;column-gap:var(--gap)}
+.grid figure{break-inside:avoid;margin-bottom:var(--gap)}
+.grid img{width:100%;height:auto}
+#weddings{background:var(--white)}
+#couples{background:var(--blush)}
+#couples .head .it{color:var(--ink)}
+
+/* incluye */
+.inc{padding:clamp(72px,9vw,130px) 0}
+.inc .head{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:var(--gap);margin-bottom:28px}
+.inc h2{grid-column:1/8;margin:0;font-size:clamp(44px,5vw,80px);line-height:.92}
+.inc ul{list-style:none;margin:0;padding:0;border-top:1px solid var(--ink)}
+.inc li{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:var(--gap);padding:26px 0;border-bottom:1px solid var(--line)}
+.inc h3{grid-column:1/6;margin:0;font-family:var(--serif);font-weight:400;font-size:clamp(30px,3.2vw,46px);line-height:1}
+.inc li p{grid-column:7/13;margin:0;align-self:center;max-width:44ch}
+.inc .note{margin:22px 0 0;font-size:15px;color:var(--mute)}
+
+/* contacto */
+.contact{background:var(--white);padding:clamp(80px,10vw,140px) 0}
+.contact .wrap{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:var(--gap)}
+.contact .k{grid-column:1/-1;margin:0;font-size:22px;color:var(--rose)}
+.contact h2{grid-column:1/-1;margin:4px 0 clamp(32px,4vw,56px);font-size:clamp(64px,10vw,160px);line-height:.84}
+.direct{grid-column:1/5;display:flex;flex-direction:column;gap:10px;align-items:stretch;max-width:320px}
+.direct p{margin:0 0 10px}
+.cbtn{display:flex;flex-direction:column;gap:2px;padding:14px 18px;border:1px solid var(--ink);text-decoration:none}
+.cbtn .t{font-family:var(--serif);font-size:26px;line-height:1}
+.cbtn .s{font-size:13px;overflow-wrap:anywhere}
+.cbtn.solid{background:var(--ink);color:var(--paper)}
+.cbtn:hover{background:var(--blush);color:var(--ink)}
+form{grid-column:6/13;display:grid;grid-template-columns:1fr 1fr;gap:26px var(--gap)}
+label{display:flex;flex-direction:column;gap:6px;font-size:13px}
+label.full{grid-column:1/-1}
+input,textarea{font:inherit;font-size:17px;color:var(--ink);background:transparent;border:0;border-bottom:1px solid var(--ink);border-radius:0;padding:8px 0;min-height:44px;width:100%;-webkit-appearance:none;appearance:none}
+textarea{min-height:120px;resize:vertical}
+input:focus,textarea:focus{outline:none;border-bottom-width:2px}
+.send{grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:center;gap:18px}
+button{font:500 15px "Schibsted Grotesk",sans-serif;background:var(--ink);color:var(--paper);border:0;padding:15px 32px;cursor:pointer}
+button:hover{background:var(--rose)}
+button:disabled{opacity:.5}
+#estado{margin:0}
+
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:16px;padding-top:28px;padding-bottom:28px;font-size:14px;border-top:1px solid var(--line)}
+footer img{height:20px;width:auto;filter:brightness(0)}
+footer nav{display:flex;flex-wrap:wrap;gap:8px 22px}
+
+@media (max-width:900px){
+ .hero .ph .flor{right:-14%;width:30%}
+ .hero .ph,.hero .txt{grid-column:1/-1} .hero .txt{margin-top:40px} .hero .ph{margin-right:12%}
+ .gal h2,.gal .head p,.inc h2,.inc h3,.inc li p{grid-column:1/-1} .gal .head p,.inc li p{margin-top:12px}
+ .cover-ph{grid-column:1/-1} .cover-id{margin-top:-14px}
+ .cover-meta .claim,.cover-meta p:not(.claim),.cover-meta .acts{grid-column:1/-1}
+ .scatter{row-gap:22px}
+ .scatter figure:nth-child(n){grid-column:1/11;margin-top:0}
+ .scatter figure:nth-child(even){grid-column:4/13}
+ .scatter figure:nth-child(3n){grid-column:2/10}
+ .direct,form{grid-column:1/-1} .direct{margin-bottom:44px;max-width:none}
+}
+@media (max-width:640px){
+ .bar .wrap{height:auto;flex-direction:column;align-items:flex-start;gap:4px;padding-top:10px;padding-bottom:8px}
+ .bar nav{width:100%;gap:18px;overflow-x:auto;scrollbar-width:none} .bar nav::-webkit-scrollbar{display:none} .bar nav a{white-space:nowrap}
+ .top{font-size:12px} .top .it{display:none}
+ .grid{column-gap:8px} .grid figure{margin-bottom:8px}
+ form{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<header class="bar tex"><div class="wrap">
+<a href="/" aria-label="Camila Escandar Studio, inicio"><img src="../../assets/85394c5534aa.png" alt="Camila Escandar Studio"></a>
+<nav aria-label="Principal"><a href="#weddings">Weddings</a><a href="#couples">Couples</a><a href="#incluye">Qué incluye</a><a href="/">Estudio</a><a class="cta" href="#contacto">Contacto</a></nav>
+</div></header>
+
+<main>
+<div class="tex"><div class="wrap">
+<p class="top"><span>Wedding photography</span><span class="it">est. 2026</span><span>Based in Chile &amp; available worldwide</span></p>
+<div class="cover">
+<figure class="cover-ph fr"><img src="../../assets/c5430bc43ebe.jpg" alt="Salida de los novios entre burbujas e invitados, en blanco y negro"></figure>
+<div class="cover-id">
+<h1 class="logo"><img src="../../assets/85394c5534aa.png" alt="Camila Escandar"></h1>
+<p class="w it">weddings</p>
+</div>
+</div>
+<div class="cover-meta">
+<p class="claim it">For the moments that become memories.</p>
+<p>Fotografía de bodas y sesiones de pareja, nostálgica y cinematográfica. Fotos que se sienten como un recuerdo, no como una pose.</p>
+<div class="acts"><a class="btn" href="#contacto">Contacto</a><a href="#weddings">Weddings</a><a href="#couples">Couples</a><a href="https://www.instagram.com/camilaescandarweddings/">@camilaescandarweddings</a></div>
+</div>
+</div></div>
+
+<section class="gal tex" id="weddings"><div class="wrap">
+<div class="head"><h2 class="serif">Weddings</h2><p><span class="it">bodas y civiles</span>Desde la preparación hasta la celebración: la ceremonia, la familia y los detalles del día.</p></div>
+<div class="scatter">
+<figure class="fr"><img src="../../assets/fd1492f1f5fd.jpg" alt="Novios mirándose a contraluz entre los árboles" loading="lazy"></figure>
+<figure class="fr"><img src="../../assets/54d4056ecde5.jpg" alt="Manos de la novia sosteniendo el ramo" loading="lazy"></figure>
+<figure class="fr"><img src="../../assets/ad386fe4bfd7.jpg" alt="Novios frente a frente en un balcón con vista a la bahía, en blanco y negro" loading="lazy"></figure>
+<figure class="fr"><img src="../../assets/5c03f1894a58.jpg" alt="Novios mirándose en la ceremonia frente a los invitados" loading="lazy"></figure>
+<figure class="fr"><img src="../../assets/bbc6d422ebe3.jpg" alt="Novios frente con frente, en blanco y negro" loading="lazy"></figure>
+<figure class="fr"><img src="../../assets/0242c351818c.jpg" alt="Novios saliendo de la ceremonia entre burbujas" loading="lazy"></figure>
+<figure class="fr"><img src="../../assets/e1a13eb848d9.jpg" alt="Argollas sobre una caja de madera junto al ramo" loading="lazy"></figure>
+<figure class="fr"><img src="../../assets/3e28ceea78a8.jpg" alt="Novio levanta a la novia, ramo sobre su hombro" loading="lazy"></figure>
+<figure class="fr"><img src="../../assets/4ac2647f2757.jpg" alt="Novios besándose en una terraza con piso a cuadros frente al mar" loading="lazy"></figure>
+<figure class="fr"><img src="../../assets/0ca4e1a12d78.jpg" alt="Novios sonriendo con copas de espumante" loading="lazy"></figure>
+<figure class="fr"><img src="../../assets/a9a3089b1a28.jpg" alt="Manos de los novios tomadas, en blanco y negro" loading="lazy"></figure>
+<figure class="fr"><img src="../../assets/9e303d3cdc99.jpg" alt="Ramo de hortensias azules y amaranto en manos de la novia" loading="lazy"></figure>
+<figure class="fr"><img src="../../assets/c1c6a03aee54.jpg" alt="Novia sonriendo bajo un árbol con su ramo" loading="lazy"></figure>
+<figure class="fr"><img src="../../assets/31b0aaf34932.jpg" alt="Novios besándose detrás del ramo" loading="lazy"></figure>
+<figure class="fr"><img src="../../assets/ec447f883c6e.jpg" alt="Novia sonriendo a su pareja durante la ceremonia" loading="lazy"></figure>
+<figure class="fr"><img src="../../assets/b75871c01758.jpg" alt="Argollas en doble exposición con rosas" loading="lazy"></figure>
+<figure class="fr"><img src="../../assets/5aceab057866.jpg" alt="Novios sentados durante la ceremonia, ella con el ramo" loading="lazy"></figure>
+<figure class="fr"><img src="../../assets/581b322265e3.jpg" alt="Novios cortando la torta, riendo" loading="lazy"></figure>
+<figure class="fr"><img src="../../assets/7b6f4039d5f7.jpg" alt="Novios abrazados riendo, en blanco y negro" loading="lazy"></figure>
+<figure class="fr"><img src="../../assets/982312bad244.jpg" alt="Ramo de novia sobre una silla tejida" loading="lazy"></figure>
+<figure class="fr"><img src="../../assets/c5430bc43ebe.jpg" alt="Salida de los novios entre burbujas e invitados, en blanco y negro" loading="lazy"></figure>
+<figure class="fr"><img src="../../assets/5a7e78f65f72.jpg" alt="Novio abraza a la novia por detrás, ambos sonríen" loading="lazy"></figure>
+<figure class="fr"><img src="../../assets/f7ffbe6ee676.jpg" alt="Argollas entre las flores del ramo" loading="lazy"></figure>
+<figure class="fr"><img src="../../assets/ca28164a92ee.jpg" alt="Novia emocionada llegando a la ceremonia del brazo" loading="lazy"></figure>
+<figure class="fr"><img src="../../assets/316f928d9a3e.jpg" alt="Novios sentados con copas, detalle de zapatos" loading="lazy"></figure>
+<figure class="fr"><img src="../../assets/dfba6d0ced9d.jpg" alt="Novio besa la frente de la novia a contraluz" loading="lazy"></figure>
+<figure class="fr"><img src="../../assets/cbb8a7e325c8.jpg" alt="Detalle del corsé del vestido al ajustarlo, en blanco y negro" loading="lazy"></figure>
+<figure class="fr"><img src="../../assets/2c4c0ba1a8e0.jpg" alt="Arreglo floral sobre el pasto con luz de tarde" loading="lazy"></figure>
+<figure class="fr"><img src="../../assets/a1e407164e28.jpg" alt="Argollas sobre una flor entre hortensias" loading="lazy"></figure>
+</div>
+</div></section>
+
+<section class="stmt tex"><div class="wrap">
+<h2 class="serif">Tu día merece una mirada cuidada y real.</h2>
+<p>Based in Chile &amp; available worldwide</p>
+</div></section>
+
+<section class="gal tex" id="couples"><div class="wrap">
+<div class="head"><h2 class="serif">Couples</h2><p><span class="it">sesiones de pareja</span>Sesiones de pareja, de compromiso o pre boda, en un lugar que sea de ustedes.</p></div>
+<div class="scatter">
+<figure class="fr"><img src="../../assets/188c4010bfaf.jpg" alt="Sesión de pareja en las calles de Santiago" loading="lazy"></figure>
+<figure class="fr"><img src="../../assets/2754fa66aca2.jpg" alt="Sesión de pareja en las calles de Santiago" loading="lazy"></figure>
+<figure class="fr"><img src="../../assets/9686a638c944.jpg" alt="Sesión de pareja en las calles de Santiago" loading="lazy"></figure>
+<figure class="fr"><img src="../../assets/5791768053d7.jpg" alt="Sesión de pareja en un parque" loading="lazy"></figure>
+<figure class="fr"><img src="../../assets/0d507ddb0d3b.jpg" alt="Sesión de pareja en las calles de Santiago" loading="lazy"></figure>
+<figure class="fr"><img src="../../assets/c23b6a7fbc64.jpg" alt="Sesión de pareja en las calles de Santiago" loading="lazy"></figure>
+<figure class="fr"><img src="../../assets/e420ef81c968.jpg" alt="Sesión de pareja en las calles de Santiago" loading="lazy"></figure>
+<figure class="fr"><img src="../../assets/ac4c9af7a94b.jpg" alt="Sesión de pareja en un parque" loading="lazy"></figure>
+<figure class="fr"><img src="../../assets/292f35555254.jpg" alt="Sesión de pareja en las calles de Santiago" loading="lazy"></figure>
+<figure class="fr"><img src="../../assets/f931f3fe7082.jpg" alt="Sesión de pareja en las calles de Santiago" loading="lazy"></figure>
+<figure class="fr"><img src="../../assets/37e45d1a9369.jpg" alt="Sesión de pareja en un parque" loading="lazy"></figure>
+<figure class="fr"><img src="../../assets/b6aaba85e7a4.jpg" alt="Sesión de pareja en las calles de Santiago" loading="lazy"></figure>
+<figure class="fr"><img src="../../assets/bca26ab170ae.jpg" alt="Sesión de pareja en las calles de Santiago" loading="lazy"></figure>
+<figure class="fr"><img src="../../assets/902053a689f6.jpg" alt="Sesión de pareja en las calles de Santiago" loading="lazy"></figure>
+<figure class="fr"><img src="../../assets/2a6bf4bb62da.jpg" alt="Sesión de pareja en un parque" loading="lazy"></figure>
+<figure class="fr"><img src="../../assets/e450ede12a4d.jpg" alt="Sesión de pareja en las calles de Santiago" loading="lazy"></figure>
+<figure class="fr"><img src="../../assets/43a6f11ef9b7.jpg" alt="Sesión de pareja en las calles de Santiago" loading="lazy"></figure>
+<figure class="fr"><img src="../../assets/92a03a24919e.jpg" alt="Sesión de pareja en las calles de Santiago" loading="lazy"></figure>
+<figure class="fr"><img src="../../assets/6159ac08be07.jpg" alt="Sesión de pareja en un parque" loading="lazy"></figure>
+<figure class="fr"><img src="../../assets/9b071a38aea1.jpg" alt="Sesión de pareja en las calles de Santiago" loading="lazy"></figure>
+<figure class="fr"><img src="../../assets/2b147719eb80.jpg" alt="Sesión de pareja en las calles de Santiago" loading="lazy"></figure>
+<figure class="fr"><img src="../../assets/0a412cb2a86e.jpg" alt="Sesión de pareja en un parque" loading="lazy"></figure>
+<figure class="fr"><img src="../../assets/866f4ffda3bf.jpg" alt="Sesión de pareja en las calles de Santiago" loading="lazy"></figure>
+<figure class="fr"><img src="../../assets/3c061e2194f5.jpg" alt="Sesión de pareja en las calles de Santiago" loading="lazy"></figure>
+<figure class="fr"><img src="../../assets/4c1b2259f6be.jpg" alt="Sesión de pareja en un parque" loading="lazy"></figure>
+<figure class="fr"><img src="../../assets/e02e5ac6c4cb.jpg" alt="Sesión de pareja en las calles de Santiago" loading="lazy"></figure>
+<figure class="fr"><img src="../../assets/98c756e7aecb.jpg" alt="Sesión de pareja en las calles de Santiago" loading="lazy"></figure>
+<figure class="fr"><img src="../../assets/7437712907f2.jpg" alt="Sesión de pareja en un parque" loading="lazy"></figure>
+<figure class="fr"><img src="../../assets/18d300d0556e.jpg" alt="Sesión de pareja en las calles de Santiago" loading="lazy"></figure>
+<figure class="fr"><img src="../../assets/97109c8d6618.jpg" alt="Sesión de pareja en las calles de Santiago" loading="lazy"></figure>
+<figure class="fr"><img src="../../assets/2c324e6a04de.jpg" alt="Sesión de pareja en las calles de Santiago" loading="lazy"></figure>
+<figure class="fr"><img src="../../assets/5d3ab78e70a0.jpg" alt="Sesión de pareja en un parque" loading="lazy"></figure>
+<figure class="fr"><img src="../../assets/b9fa3eb706d0.jpg" alt="Sesión de pareja en las calles de Santiago" loading="lazy"></figure>
+<figure class="fr"><img src="../../assets/9f191546e502.jpg" alt="Sesión de pareja en las calles de Santiago" loading="lazy"></figure>
+<figure class="fr"><img src="../../assets/f82604cdb5c7.jpg" alt="Sesión de pareja en las calles de Santiago" loading="lazy"></figure>
+<figure class="fr"><img src="../../assets/ee7166b5faed.jpg" alt="Sesión de pareja en un parque" loading="lazy"></figure>
+<figure class="fr"><img src="../../assets/234e12fc484a.jpg" alt="Sesión de pareja en las calles de Santiago" loading="lazy"></figure>
+<figure class="fr"><img src="../../assets/8c4ede2a57c4.jpg" alt="Sesión de pareja en las calles de Santiago" loading="lazy"></figure>
+<figure class="fr"><img src="../../assets/07ac8922b61d.jpg" alt="Sesión de pareja en las calles de Santiago" loading="lazy"></figure>
+<figure class="fr"><img src="../../assets/bc6e2de9103d.jpg" alt="Sesión de pareja en un parque" loading="lazy"></figure>
+<figure class="fr"><img src="../../assets/0416957a38e7.jpg" alt="Sesión de pareja en las calles de Santiago" loading="lazy"></figure>
+<figure class="fr"><img src="../../assets/ff1f1cb1de2b.jpg" alt="Sesión de pareja en un parque" loading="lazy"></figure>
+<figure class="fr"><img src="../../assets/2d292a5eaf32.jpg" alt="Sesión de pareja en las calles de Santiago" loading="lazy"></figure>
+<figure class="fr"><img src="../../assets/ebc99bb7d53b.jpg" alt="Sesión de pareja en las calles de Santiago" loading="lazy"></figure>
+<figure class="fr"><img src="../../assets/f448e14ec344.jpg" alt="Sesión de pareja en las calles de Santiago" loading="lazy"></figure>
+<figure class="fr"><img src="../../assets/5b83c95d5c4c.jpg" alt="Sesión de pareja en un parque" loading="lazy"></figure>
+<figure class="fr"><img src="../../assets/6dca1e34bc82.jpg" alt="Sesión de pareja en las calles de Santiago" loading="lazy"></figure>
+<figure class="fr"><img src="../../assets/4e11dd7ae487.jpg" alt="Sesión de pareja en las calles de Santiago" loading="lazy"></figure>
+<figure class="fr"><img src="../../assets/798baae20c77.jpg" alt="Sesión de pareja en las calles de Santiago" loading="lazy"></figure>
+<figure class="fr"><img src="../../assets/4a7d9dcd00a2.jpg" alt="Sesión de pareja en un parque" loading="lazy"></figure>
+<figure class="fr"><img src="../../assets/d75ea44882e3.jpg" alt="Sesión de pareja en las calles de Santiago" loading="lazy"></figure>
+<figure class="fr"><img src="../../assets/372efbd1f9e8.jpg" alt="Sesión de pareja en un parque" loading="lazy"></figure>
+<figure class="fr"><img src="../../assets/4e64c3db267c.jpg" alt="Sesión de pareja en un parque" loading="lazy"></figure>
+</div>
+</div></section>
+
+<section class="inc tex" id="incluye"><div class="wrap">
+<div class="head"><h2 class="serif">Weddings &amp; couples</h2></div>
+<ul>
+<li><h3>Weddings</h3><p>Matrimonios civiles y bodas, desde la preparación hasta la celebración.</p></li>
+<li><h3>Couples</h3><p>Sesiones de pareja, de compromiso o pre boda, en un lugar que sea de ustedes.</p></li>
+</ul>
+</div></section>
+
+<section class="contact tex" id="contacto"><div class="wrap">
+<p class="k it">¿ya tienen fecha?</p>
+<h2 class="serif">Conversemos</h2>
+<div class="direct">
+<p>Cuéntame de su matrimonio y te respondo con disponibilidad.</p>
+<a class="cbtn solid" href="https://wa.me/56974323120?text=Hola%20Camila%2C%20quiero%20consultar%20disponibilidad%20para%20mi%20boda"><span class="t">WhatsApp</span><span class="s">+56 9 7432 3120</span></a>
+<a class="cbtn" href="mailto:camilaescandarstudio@gmail.com"><span class="t">Email</span><span class="s">camilaescandarstudio@gmail.com</span></a>
+</div>
+<form id="form-bodas" action="https://api.web3forms.com/submit" method="POST">
+<input type="hidden" name="access_key" value="bd0594fa-93ce-49f1-b78b-f24cdd2ea190">
+<input type="hidden" name="subject" value="Nueva consulta de matrimonio · camilaescandarstudio.com">
+<input type="hidden" name="from_name" value="Web Camila Escandar Weddings">
+<input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+<label>Nombres<input type="text" name="nombres" required></label>
+<label>Fecha (o fecha tentativa)<input type="text" name="fecha" required></label>
+<label>Lugar<input type="text" name="lugar" required></label>
+<label>Email<input type="email" name="email" autocomplete="email" required></label>
+<label>Teléfono<input type="tel" name="telefono" autocomplete="tel" required></label>
+<label class="full">Cuéntame de tu matrimonio<textarea name="mensaje" required></textarea></label>
+<div class="send"><button type="submit">Enviar consulta</button><p id="estado" role="status"></p></div>
+</form>
+</div></section>
+</main>
+
+<footer class="tex"><div class="wrap">
+<img src="../../assets/85394c5534aa.png" alt="Camila Escandar Studio">
+<nav aria-label="Redes"><a href="https://wa.me/56974323120">WhatsApp</a><a href="mailto:camilaescandarstudio@gmail.com">Email</a><a href="https://www.instagram.com/camilaescandarweddings/">Instagram</a><a href="/">Estudio</a></nav>
+<span>© 2026 Camila Escandar</span>
+</div></footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var f = document.getElementById("form-bodas"), st = document.getElementById("estado");
+  f.addEventListener("submit", function (e) {
+    e.preventDefault(); var b = f.querySelector("button"); b.disabled = true; st.textContent = "Enviando…";
+    fetch(f.action, { method: "POST", headers: { Accept: "application/json" }, body: new FormData(f) })
+      .then(function (r) { return r.json(); })
+      .then(function (j) { if (j.success) { f.reset(); st.textContent = "Consulta enviada. Te respondo pronto."; } else { st.textContent = "No se pudo enviar. Escríbeme por WhatsApp."; } })
+      .catch(function () { st.textContent = "No se pudo enviar. Escríbeme por WhatsApp."; })
+      .finally(function () { b.disabled = false; });
+  });
+});
+</script>
+</body>
+</html>
