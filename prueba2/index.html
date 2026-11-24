@@ -13,7 +13,7 @@
 :root{--script:"Bodoni Moda",Georgia,serif;--cream:#faf7f2;--white:#ffffff;--brown:#070d0d;--blush:#f2cdd5;--noir:#070d0d;--mute:#6d6a66;--pad:clamp(18px,4vw,56px);--gap:clamp(12px,1.6vw,24px);
 --serif:"Libre Caslon Condensed","Libre Caslon Text",Didot,"Bodoni 72",Georgia,serif}
 *{box-sizing:border-box}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;overflow-x:clip}
 body{margin:0;background:var(--cream);color:var(--brown);font:400 16px/1.6 "Schibsted Grotesk",system-ui,sans-serif;overflow-x:hidden}
 img,video{display:block;max-width:100%}
 a{color:inherit;text-decoration-thickness:1px;text-underline-offset:4px}
@@ -85,10 +85,11 @@ section{position:relative;padding:clamp(72px,9vw,140px) 0}
 .photo h2 span{display:block}
 .photo h2 span:last-child{padding-left:1.4ch}
 .photo .note{grid-column:8/12;grid-row:1;align-self:end;margin:0;max-width:30ch}
-.wall{columns:3;column-gap:var(--gap)}
-.ph{break-inside:avoid;margin-bottom:var(--gap)}
+.wall{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:var(--gap)}
+.wall .ph{width:calc((100% - 2*var(--gap))/3)}
+.ph{margin:0}
 .ph img{width:100%;height:auto}
-.ph:nth-child(3n+2){padding:0 12%}
+.wall .ph:nth-child(3n+2) img{width:78%;margin:0 auto}
 
 /* sobre mí */
 .about .wrap{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:var(--gap);align-items:center}
@@ -193,7 +194,7 @@ body{background:var(--cream)}
 @media (max-width:1000px){
  .reels{grid-template-columns:repeat(3,minmax(0,1fr))}
  .reel:nth-child(n){margin-top:0} .reel:nth-child(3n+2){margin-top:60px}
- .wall{columns:2}
+ .wall .ph{width:calc((100% - var(--gap))/2)}
 }
 @media (max-width:760px){
  .bar .wrap{height:auto;flex-direction:column;align-items:flex-start;gap:4px;padding-top:12px;padding-bottom:8px}
@@ -211,7 +212,7 @@ body{background:var(--cream)}
  .photo .feat,.photo h2,.photo .note{grid-column:1/-1;grid-row:auto}
  .photo h2{margin:-0.42em 0 0}
  .photo .note{margin-top:20px}
- .wall{columns:2;column-gap:10px} .ph{margin-bottom:10px} .ph:nth-child(3n+2){padding:0}
+ .wall{gap:10px}.wall .ph{width:calc((100% - 10px)/2)} .ph{margin:0} .wall .ph:nth-child(n) img{width:100%}
  .ab-photo,.ab-text{grid-column:1/-1;margin-right:0}
  .ab-photo{width:86%;margin-bottom:64px}
  .flor{right:-22%;bottom:-48px;width:42%}
@@ -272,7 +273,6 @@ body{background:var(--cream)}
 </div>
 <div class="wall">
 <figure class="ph"><img src="../assets/87b3c9c25836.jpg" alt="Fotografía · Collares FR" loading="lazy"></figure>
-<figure class="ph"><img src="../assets/5e1c24f0dae4.jpg" alt="Fotografía · Collares FR" loading="lazy"></figure>
 <figure class="ph"><img src="../assets/450915b55906.jpg" alt="Fotografía · Miu Miu · Valentina" loading="lazy"></figure>
 <figure class="ph"><img src="../assets/22f441d7a318.jpg" alt="Fotografía · Retrato" loading="lazy"></figure>
 <figure class="ph"><img src="../assets/65008c71a558.jpg" alt="Fotografía · Collares FR" loading="lazy"></figure>
@@ -282,6 +282,7 @@ body{background:var(--cream)}
 <figure class="ph"><img src="../assets/5025b627dab8.jpg" alt="Fotografía · Collares FR" loading="lazy"></figure>
 <figure class="ph"><img src="../assets/c45a51959480.jpg" alt="Fotografía · Fast Not Junk" loading="lazy"></figure>
 <figure class="ph"><img src="../assets/2d8e62425e40.jpg" alt="Fotografía · Miu Miu · MJ" loading="lazy"></figure>
+<figure class="ph"><img src="../assets/5e1c24f0dae4.jpg" alt="Fotografía · Collares FR" loading="lazy"></figure>
 <figure class="ph"><img src="../assets/kadu-bolsos.jpg" alt="Fotografía · Kadú" loading="lazy"></figure>
 <figure class="ph"><img src="../assets/3cad50efce39.jpg" alt="Fotografía · Swarovski" loading="lazy"></figure>
 <figure class="ph"><img src="../assets/miss-dior.jpg" alt="Fotografía · Dior" loading="lazy"></figure>
