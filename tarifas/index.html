@@ -11,6 +11,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz@0,6..96;1,6..96&amp;family=Poppins:wght@300;400;500&amp;display=swap" rel="stylesheet">
 <style>
+.topbar{position:sticky;top:0;z-index:50;padding-top:16px !important;padding-bottom:16px !important;background:rgba(11,11,11,.88);box-shadow:0 0 0 100vmax rgba(11,11,11,.88);clip-path:inset(0 -100vmax);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}@media (max-width:640px){.topbar nav a:not(:last-child){display:none}.topbar{padding-left:20px !important;padding-right:20px !important}}
 body{margin:0;background:#0b0b0b}
 html{scroll-behavior:smooth}
 a{color:#f2efeb}a:hover{opacity:.75}
@@ -23,8 +24,8 @@ a{color:#f2efeb}a:hover{opacity:.75}
 
 <div style="background: #0b0b0b; color: #f2efeb; font-family: 'Poppins', system-ui, sans-serif; font-weight: 300; min-height: 100vh">
 
-<header style="max-width: 1200px; margin: 0 auto; padding: 28px 40px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
-<img src="../assets/89bf1bcb27ef.png" alt="Camila Escandar Studio" style="display: block; height: 34px; width: auto">
+<header class="topbar" style="max-width: 1200px; margin: 0 auto; padding: 28px 40px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+<a href="/" aria-label="Volver al inicio" style="display: block; line-height: 0"><img src="../assets/89bf1bcb27ef.png" alt="Camila Escandar Studio" style="display: block; height: 34px; width: auto"></a>
 <nav aria-label="Secciones" style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 30px; font-size: 12px; font-weight: 400; letter-spacing: 0.18em; text-transform: uppercase">
 <a href="#servicios" style="text-decoration: none; padding: 12px 0">Servicios</a>
 <a href="#jornada" style="text-decoration: none; padding: 12px 0">Jornadas</a>
