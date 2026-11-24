@@ -50,6 +50,10 @@ a{color:inherit;text-underline-offset:4px;text-decoration-thickness:1px}
 .pk-head .k{grid-column:1/-1;margin:0 0 8px;font-size:22px;color:var(--rose)}
 .pk-head h2{grid-column:1/8;margin:0;font-size:clamp(44px,5.4vw,84px);line-height:.95}
 .pk-head .note{grid-column:9/13;margin:0;font-size:15px;color:var(--mute)}
+.sched{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:var(--gap);margin-top:clamp(28px,3.5vw,48px);padding-top:clamp(20px,2.5vw,32px);border-top:1px solid var(--line)}
+.sched .it{grid-column:1/4;margin:0;font-size:22px;color:var(--rose)}
+.sched p:not(.it){grid-column:4/11;margin:0;max-width:62ch}
+@media(max-width:760px){.sched .it,.sched p:not(.it){grid-column:1/-1}.sched .it{margin-bottom:8px}}
 .pk-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--gap)}
 .pk{border:1px solid var(--ink);padding:clamp(24px,3vw,40px);display:flex;flex-direction:column}
 .pk-h{margin:0;font-size:clamp(28px,2.6vw,40px);line-height:1}
@@ -154,6 +158,7 @@ footer img{height:20px;width:auto}
 <p class="pk-sub">Total IVA incluido</p>
 <dl><div><dt>Valor neto</dt><dd>$714.286</dd></div><div><dt>IVA (19%)</dt><dd>$135.714</dd></div></dl>
 </div></div>
+<div class="sched"><p class="it">los horarios</p><p>Los organizamos en conjunto, según cómo sea su día. Por ejemplo, desde que se están arreglando, pasando por la ceremonia, la sesión de novios y el cóctel, hasta la fiesta. Las 8 y 10 horas son propuestas: si necesitan otra cantidad de horas, lo vemos.</p></div>
 </div></section></div>
 
 <section class="addon dark tex"><div class="wrap">
