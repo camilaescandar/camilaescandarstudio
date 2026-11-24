@@ -183,6 +183,16 @@ body{background:var(--cream)}
 @keyframes rv{to{opacity:1;transform:none;filter:blur(0)}}
 @keyframes rvs{to{opacity:1}}
 @media (prefers-reduced-motion:reduce){.reveal span,.h3-head .sub{animation:none;opacity:1;transform:none;filter:none}}
+.h4{text-align:center;margin:0 0 clamp(28px,3.5vw,48px)}
+.h4-logo{margin:0 auto;line-height:0;width:min(100%,clamp(280px,52vw,760px))}
+.h4-logo img{width:100%;height:auto}
+.h4-title{margin:clamp(22px,2.6vw,40px) 0 0;font-family:"Bodoni Moda",Georgia,serif;font-variation-settings:"opsz" 96;font-weight:400;font-size:clamp(34px,4.2vw,64px);line-height:1;color:#dd98a6}
+.h4 .sub{margin:clamp(10px,1.2vw,16px) 0 0;font-size:clamp(14px,1.15vw,17px);letter-spacing:.06em;color:var(--mute);opacity:0;animation:rvs 1.2s ease .9s forwards}
+.h4 .sub span{margin:0 .7em;color:rgba(7,13,13,.3)}
+.h4-foot{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px 32px;padding-top:20px;border-top:1px solid rgba(7,13,13,.18)}
+.h4-foot .tag{margin:0;font-size:clamp(18px,1.5vw,22px);color:#3b3b3b}
+@media (max-width:760px){.h4-logo{width:86%}.h4-foot{flex-direction:column;text-align:center}}
+@media (prefers-reduced-motion:reduce){.h4 .sub{animation:none;opacity:1}}
 .h3-foot{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:16px 40px;padding-top:22px;border-top:1px solid rgba(7,13,13,.18)}
 .h3-logo{grid-column:2;grid-row:1;width:clamp(200px,22vw,340px);height:auto;justify-self:center}
 .h3-foot .tag{grid-column:1;grid-row:1;margin:0;font-size:clamp(18px,1.5vw,22px);line-height:1.2;color:#3b3b3b}
@@ -251,12 +261,12 @@ body{background:var(--cream)}
 <div class="hero2 tex"><div class="wrap">
 <p class="h2-top" style="border-bottom-color:rgba(7,13,13,.18)"><span class="it">Creatividad</span><span class="it">Intención</span><span class="it">Storytelling</span></p>
 <div class="h2-col"><figure class="c0"><img src="assets/44267cbed9eb.jpg" alt="Fotografía · Dior"></figure><figure class="c1"><img src="assets/bfaea4a55663.jpg" alt="Fotografía · Miu Miu · MJ"></figure><figure class="c2"><img src="assets/9a2eaf58a164.jpg" alt="Fotografía · Kadú"></figure><figure class="c3"><img src="assets/retrato-sweater-bn.jpg" alt="Fotografía · Retrato"></figure></div>
-<div class="h3-head">
-<h1 class="reveal"><span>Estudio</span> <span>creativo</span></h1>
+<div class="h4">
+<h1 class="h4-logo"><img src="assets/logo-rosa.png" alt="Camila Escandar Studio"></h1>
+<p class="h4-title reveal"><span>Estudio</span> <span>creativo</span></p>
 <p class="sub">Fotografía<span>|</span>Video<span>|</span>Creación de contenido<span>|</span>Marketing digital</p>
 </div>
-<div class="h3-foot">
-<img class="h3-logo" src="assets/logo-rosa.png" alt="Camila Escandar Studio">
+<div class="h4-foot">
 <p class="tag it">contenido con estética y estrategia.</p>
 <ul class="links"><li><a href="https://wa.me/56974323120">WhatsApp</a></li><li><a href="mailto:camilaescandarstudio@gmail.com">Email</a></li><li><a href="https://www.instagram.com/camilaescandarstudio/">Instagram</a></li></ul>
 </div>
