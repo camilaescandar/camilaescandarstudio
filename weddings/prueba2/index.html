@@ -51,12 +51,12 @@ figure{margin:0}
 .btn:hover{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1px var(--ink)}
 
 /* portada editorial */
-.hcol{display:flex;justify-content:space-between;align-items:flex-end;gap:clamp(8px,1.3vw,20px);margin-bottom:clamp(28px,3.5vw,52px)}
+.hcol{display:flex;justify-content:space-between;align-items:center;gap:clamp(8px,1.3vw,20px);margin-bottom:clamp(28px,3.5vw,52px)}
 .hcol figure{flex:none}
 .hcol img{width:auto;object-fit:cover}
 .hc-rings img,.hc-walk img,.hc-bal img,.hc-cor img{height:min(19vw,270px);aspect-ratio:2/3}
 .hc-bub img{height:min(19vw,270px);aspect-ratio:3/2}
-.hc-rings{align-self:flex-end}.hc-walk{align-self:flex-start}.hc-bal{align-self:flex-start;margin-top:clamp(12px,1.6vw,24px)}.hc-cor{align-self:flex-end}
+.hcol figure{align-self:center !important;margin:0 !important}
 .hcol figure{opacity:0;transform:translateY(14px);animation:hin .9s cubic-bezier(.2,.7,.2,1) forwards}
 .hcol figure:nth-child(1){animation-delay:.15s}.hcol figure:nth-child(2){animation-delay:.4s}.hcol figure:nth-child(3){animation-delay:.65s}.hcol figure:nth-child(4){animation-delay:.9s}.hcol figure:nth-child(5){animation-delay:1.15s}
 @keyframes hin{to{opacity:1;transform:none}}
@@ -86,8 +86,6 @@ figure{margin:0}
 #couples .scatter figure:nth-child(4n+2){margin-top:clamp(28px,4vw,60px)}
 #couples .scatter figure:nth-child(4n+3){margin-top:clamp(10px,1.5vw,22px)}
 #couples .scatter figure:nth-child(4n+4){margin-top:clamp(44px,6vw,90px)}
-#couples .scatter figure:nth-child(4n+1){padding-right:8%}
-#couples .scatter figure:nth-child(4n+3){padding-left:8%}
 @media (max-width:760px){#couples .scatter{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:10px;row-gap:12px}
 #couples .scatter figure:nth-child(n){grid-column:auto;margin-top:0;padding:0}
 #couples .scatter figure:nth-child(even){margin-top:28px}}
@@ -155,7 +153,7 @@ footer nav{display:flex;flex-wrap:wrap;gap:8px 22px}
  .hcol figure{align-self:auto !important;margin:0 !important}
  .hcol img{width:100% !important;height:auto !important}
  .hc-bub{grid-column:1/-1;order:-1}
- .hc-walk{margin-top:24px !important} .hc-cor{margin-top:-24px !important}
+ .hcol figure{margin:0 !important}
  .cover-meta .claim,.cover-meta p:not(.claim),.cover-meta .acts{grid-column:1/-1}
  .scatter{row-gap:22px}
  .scatter figure:nth-child(n){grid-column:1/11;margin-top:0}
@@ -175,12 +173,12 @@ footer nav{display:flex;flex-wrap:wrap;gap:8px 22px}
 <body>
 <header class="bar tex"><div class="wrap">
 <a href="/" aria-label="Camila Escandar Studio, inicio"><img src="../../assets/85394c5534aa.png" alt="Camila Escandar Studio"></a>
-<nav aria-label="Principal"><a href="#weddings">Weddings</a><a href="#couples">Couples</a><a href="#incluye">Qué incluye</a><a href="/">Estudio</a><a class="cta" href="#contacto">Contacto</a></nav>
+<nav aria-label="Principal"><a href="#weddings">Weddings</a><a href="#couples">Couples</a><a href="#incluye">Coberturas</a><a href="/">Estudio</a><a class="cta" href="#contacto">Contacto</a></nav>
 </div></header>
 
 <main>
 <div class="tex"><div class="wrap">
-<p class="top"><span>Wedding photography</span><span class="it">est. 2026</span><span>Based in Chile &amp; available worldwide</span></p>
+<p class="top"><span>Wedding photography</span><span>Based in Chile &amp; available worldwide</span></p>
 <div class="hcol"><figure class="fr hc-rings"><img src="../../assets/b75871c01758.jpg" alt="Argollas en doble exposición con rosas"></figure><figure class="fr hc-walk"><img src="../../assets/ac4c9af7a94b.jpg" alt="Sesión de pareja en un parque"></figure><figure class="fr hc-bub"><img src="../../assets/c5430bc43ebe.jpg" alt="Salida de los novios entre burbujas e invitados, en blanco y negro"></figure><figure class="fr hc-bal"><img src="../../assets/ad386fe4bfd7.jpg" alt="Novios frente a frente en un balcón con vista a la bahía, en blanco y negro"></figure><figure class="fr hc-cor"><img src="../../assets/cbb8a7e325c8.jpg" alt="Detalle del corsé del vestido al ajustarlo, en blanco y negro"></figure></div>
 <div class="cover-id">
 <p class="w it">weddings</p>
@@ -188,7 +186,7 @@ footer nav{display:flex;flex-wrap:wrap;gap:8px 22px}
 </div>
 <div class="cover-meta">
 <p class="claim it">For the moments that become memories.</p>
-<p>Fotografía de bodas y sesiones de pareja, nostálgica y cinematográfica. Fotos que se sienten como un recuerdo, no como una pose.</p>
+<p>Fotografía de bodas y sesiones de pareja, nostálgica y cinematográfica, delicada y real.</p>
 <div class="acts"><a class="btn" href="#contacto">Contacto</a><a href="#weddings">Weddings</a><a href="#couples">Couples</a><a href="https://www.instagram.com/camilaescandarweddings/">@camilaescandarweddings</a></div>
 </div>
 </div></div>
@@ -279,7 +277,7 @@ footer nav{display:flex;flex-wrap:wrap;gap:8px 22px}
 </div></section>
 
 <section class="inc tex" id="incluye"><div class="wrap">
-<div class="head"><h2 class="serif">Weddings &amp; couples</h2></div>
+<div class="head"><h2 class="serif">Tipos de cobertura</h2></div>
 <ul>
 <li><h3>Weddings</h3><p>Matrimonios civiles y bodas, desde la preparación hasta la celebración.</p></li>
 <li><h3>Couples</h3><p>Sesiones de pareja, de compromiso o pre boda, en un lugar que sea de ustedes.</p></li>
@@ -290,7 +288,7 @@ footer nav{display:flex;flex-wrap:wrap;gap:8px 22px}
 <p class="k it">¿ya tienen fecha?</p>
 <h2 class="serif">Conversemos</h2>
 <div class="direct">
-<p>Cuéntame de su matrimonio y te respondo con disponibilidad.</p>
+<p>Cuéntame de ustedes, su matrimonio o su sesión, y te respondo con disponibilidad.</p>
 <a class="cbtn solid" href="https://wa.me/56974323120?text=Hola%20Camila%2C%20quiero%20consultar%20disponibilidad%20para%20mi%20boda"><span class="t">WhatsApp</span><span class="s">+56 9 7432 3120</span></a>
 <a class="cbtn" href="mailto:camilaescandarstudio@gmail.com"><span class="t">Email</span><span class="s">camilaescandarstudio@gmail.com</span></a>
 </div>
@@ -304,7 +302,7 @@ footer nav{display:flex;flex-wrap:wrap;gap:8px 22px}
 <label>Lugar<input type="text" name="lugar" required></label>
 <label>Email<input type="email" name="email" autocomplete="email" required></label>
 <label>Teléfono<input type="tel" name="telefono" autocomplete="tel" required></label>
-<label class="full">Cuéntame de tu matrimonio<textarea name="mensaje" required></textarea></label>
+<label class="full">Cuéntenme de ustedes<textarea name="mensaje" required></textarea></label>
 <div class="send"><button type="submit">Enviar consulta</button><p id="estado" role="status"></p></div>
 </form>
 </div></section>
