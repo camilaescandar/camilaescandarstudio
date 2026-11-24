@@ -81,6 +81,16 @@ figure{margin:0}
 .scatter figure:nth-child(6n+4){grid-column:9/13;margin-top:clamp(-40px,-3vw,-10px)}
 .scatter figure:nth-child(6n+5){grid-column:1/4;margin-top:clamp(20px,4vw,72px)}
 .scatter figure:nth-child(6n){grid-column:5/10}
+#couples .scatter{grid-template-columns:repeat(4,minmax(0,1fr));column-gap:clamp(14px,2vw,32px);row-gap:clamp(14px,2vw,28px)}
+#couples .scatter figure:nth-child(n){grid-column:auto;margin-top:0}
+#couples .scatter figure:nth-child(4n+2){margin-top:clamp(28px,4vw,60px)}
+#couples .scatter figure:nth-child(4n+3){margin-top:clamp(10px,1.5vw,22px)}
+#couples .scatter figure:nth-child(4n+4){margin-top:clamp(44px,6vw,90px)}
+#couples .scatter figure:nth-child(4n+1){padding-right:8%}
+#couples .scatter figure:nth-child(4n+3){padding-left:8%}
+@media (max-width:760px){#couples .scatter{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:10px;row-gap:12px}
+#couples .scatter figure:nth-child(n){grid-column:auto;margin-top:0;padding:0}
+#couples .scatter figure:nth-child(even){margin-top:28px}}
 /* frase */
 .stmt{background:var(--white);text-align:center;padding:clamp(80px,10vw,150px) 0}
 .stmt h2{margin:0 auto;max-width:16ch;font-size:clamp(40px,5.4vw,84px);line-height:.98}
