@@ -51,13 +51,18 @@ figure{margin:0}
 .btn:hover{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1px var(--ink)}
 
 /* portada editorial */
-.cover{position:relative;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:var(--gap)}
-.cover-ph{grid-column:2/12;grid-row:1}
-.cover-ph img{width:100%;height:auto;max-height:none}
-.cover-id{grid-column:1/13;grid-row:2;margin-top:clamp(-46px,-3vw,-16px);position:relative;z-index:2;display:flex;flex-direction:column;align-items:stretch}
-.cover-id .logo{margin:0 auto;width:92%;line-height:0;background:var(--paper);padding:clamp(10px,1.4vw,20px) clamp(12px,2vw,28px) 0}
+.hcol{display:flex;justify-content:space-between;align-items:flex-end;gap:clamp(8px,1.3vw,20px);margin-bottom:clamp(28px,3.5vw,52px)}
+.hcol figure{flex:none}
+.hcol img{width:auto;object-fit:cover}
+.hc-rings img{height:min(15vw,216px);aspect-ratio:2/3}.hc-rings{align-self:center}
+.hc-walk img{height:min(21vw,300px);aspect-ratio:2/3}.hc-walk{align-self:flex-start}
+.hc-bub img{height:min(23vw,330px);aspect-ratio:3/2}
+.hc-bal img{height:min(18vw,260px);aspect-ratio:2/3}.hc-bal{align-self:flex-start;margin-top:clamp(20px,3vw,48px)}
+.hc-cor img{height:min(13vw,190px);aspect-ratio:2/3}
+.cover-id{display:flex;flex-direction:column}
+.cover-id .logo{margin:0;line-height:0}
 .cover-id .logo img{width:100%;height:auto;filter:brightness(0)}
-.cover-id .w{margin:0;padding:0 clamp(12px,2vw,28px) 6px;background:var(--paper);align-self:flex-end;margin-right:4% !important;font-size:clamp(34px,3.6vw,56px);line-height:1.1;color:var(--rose)}
+.cover-id .w{margin:-.1em 0 0;align-self:flex-end;font-size:clamp(34px,3.6vw,56px);line-height:1.1;color:var(--rose)}
 .cover-meta{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:var(--gap);row-gap:16px;padding:clamp(40px,5vw,72px) 0 clamp(72px,9vw,120px);align-items:start}
 .cover-meta .claim{grid-column:1/6;margin:0;font-size:clamp(28px,2.6vw,40px);line-height:1.15}
 .cover-meta p:not(.claim){grid-column:7/11;margin:0;max-width:40ch}
@@ -134,7 +139,11 @@ footer nav{display:flex;flex-wrap:wrap;gap:8px 22px}
  .hero .ph .flor{right:-14%;width:30%}
  .hero .ph,.hero .txt{grid-column:1/-1} .hero .txt{margin-top:40px} .hero .ph{margin-right:12%}
  .gal h2,.gal .head p,.inc h2,.inc h3,.inc li p{grid-column:1/-1} .gal .head p,.inc li p{margin-top:12px}
- .cover-ph{grid-column:1/-1} .cover-id{margin-top:-14px}
+ .hcol{display:grid;grid-template-columns:1fr 1fr;gap:10px;align-items:start}
+ .hcol figure{align-self:auto !important;margin:0 !important}
+ .hcol img{width:100% !important;height:auto !important}
+ .hc-bub{grid-column:1/-1;order:-1}
+ .hc-walk{margin-top:24px !important} .hc-cor{margin-top:-24px !important}
  .cover-meta .claim,.cover-meta p:not(.claim),.cover-meta .acts{grid-column:1/-1}
  .scatter{row-gap:22px}
  .scatter figure:nth-child(n){grid-column:1/11;margin-top:0}
@@ -160,12 +169,10 @@ footer nav{display:flex;flex-wrap:wrap;gap:8px 22px}
 <main>
 <div class="tex"><div class="wrap">
 <p class="top"><span>Wedding photography</span><span class="it">est. 2026</span><span>Based in Chile &amp; available worldwide</span></p>
-<div class="cover">
-<figure class="cover-ph fr"><img src="../../assets/c5430bc43ebe.jpg" alt="Salida de los novios entre burbujas e invitados, en blanco y negro"></figure>
+<div class="hcol"><figure class="fr hc-rings"><img src="../../assets/b75871c01758.jpg" alt="Argollas en doble exposición con rosas"></figure><figure class="fr hc-walk"><img src="../../assets/ac4c9af7a94b.jpg" alt="Sesión de pareja en un parque"></figure><figure class="fr hc-bub"><img src="../../assets/c5430bc43ebe.jpg" alt="Salida de los novios entre burbujas e invitados, en blanco y negro"></figure><figure class="fr hc-bal"><img src="../../assets/ad386fe4bfd7.jpg" alt="Novios frente a frente en un balcón con vista a la bahía, en blanco y negro"></figure><figure class="fr hc-cor"><img src="../../assets/cbb8a7e325c8.jpg" alt="Detalle del corsé del vestido al ajustarlo, en blanco y negro"></figure></div>
 <div class="cover-id">
 <h1 class="logo"><img src="../../assets/85394c5534aa.png" alt="Camila Escandar"></h1>
 <p class="w it">weddings</p>
-</div>
 </div>
 <div class="cover-meta">
 <p class="claim it">For the moments that become memories.</p>
@@ -179,7 +186,6 @@ footer nav{display:flex;flex-wrap:wrap;gap:8px 22px}
 <div class="scatter">
 <figure class="fr"><img src="../../assets/fd1492f1f5fd.jpg" alt="Novios mirándose a contraluz entre los árboles" loading="lazy"></figure>
 <figure class="fr"><img src="../../assets/54d4056ecde5.jpg" alt="Manos de la novia sosteniendo el ramo" loading="lazy"></figure>
-<figure class="fr"><img src="../../assets/ad386fe4bfd7.jpg" alt="Novios frente a frente en un balcón con vista a la bahía, en blanco y negro" loading="lazy"></figure>
 <figure class="fr"><img src="../../assets/5c03f1894a58.jpg" alt="Novios mirándose en la ceremonia frente a los invitados" loading="lazy"></figure>
 <figure class="fr"><img src="../../assets/bbc6d422ebe3.jpg" alt="Novios frente con frente, en blanco y negro" loading="lazy"></figure>
 <figure class="fr"><img src="../../assets/0242c351818c.jpg" alt="Novios saliendo de la ceremonia entre burbujas" loading="lazy"></figure>
@@ -192,7 +198,6 @@ footer nav{display:flex;flex-wrap:wrap;gap:8px 22px}
 <figure class="fr"><img src="../../assets/c1c6a03aee54.jpg" alt="Novia sonriendo bajo un árbol con su ramo" loading="lazy"></figure>
 <figure class="fr"><img src="../../assets/31b0aaf34932.jpg" alt="Novios besándose detrás del ramo" loading="lazy"></figure>
 <figure class="fr"><img src="../../assets/ec447f883c6e.jpg" alt="Novia sonriendo a su pareja durante la ceremonia" loading="lazy"></figure>
-<figure class="fr"><img src="../../assets/b75871c01758.jpg" alt="Argollas en doble exposición con rosas" loading="lazy"></figure>
 <figure class="fr"><img src="../../assets/5aceab057866.jpg" alt="Novios sentados durante la ceremonia, ella con el ramo" loading="lazy"></figure>
 <figure class="fr"><img src="../../assets/581b322265e3.jpg" alt="Novios cortando la torta, riendo" loading="lazy"></figure>
 <figure class="fr"><img src="../../assets/7b6f4039d5f7.jpg" alt="Novios abrazados riendo, en blanco y negro" loading="lazy"></figure>
@@ -203,7 +208,6 @@ footer nav{display:flex;flex-wrap:wrap;gap:8px 22px}
 <figure class="fr"><img src="../../assets/ca28164a92ee.jpg" alt="Novia emocionada llegando a la ceremonia del brazo" loading="lazy"></figure>
 <figure class="fr"><img src="../../assets/316f928d9a3e.jpg" alt="Novios sentados con copas, detalle de zapatos" loading="lazy"></figure>
 <figure class="fr"><img src="../../assets/dfba6d0ced9d.jpg" alt="Novio besa la frente de la novia a contraluz" loading="lazy"></figure>
-<figure class="fr"><img src="../../assets/cbb8a7e325c8.jpg" alt="Detalle del corsé del vestido al ajustarlo, en blanco y negro" loading="lazy"></figure>
 <figure class="fr"><img src="../../assets/2c4c0ba1a8e0.jpg" alt="Arreglo floral sobre el pasto con luz de tarde" loading="lazy"></figure>
 <figure class="fr"><img src="../../assets/a1e407164e28.jpg" alt="Argollas sobre una flor entre hortensias" loading="lazy"></figure>
 </div>
@@ -224,7 +228,6 @@ footer nav{display:flex;flex-wrap:wrap;gap:8px 22px}
 <figure class="fr"><img src="../../assets/0d507ddb0d3b.jpg" alt="Sesión de pareja en las calles de Santiago" loading="lazy"></figure>
 <figure class="fr"><img src="../../assets/c23b6a7fbc64.jpg" alt="Sesión de pareja en las calles de Santiago" loading="lazy"></figure>
 <figure class="fr"><img src="../../assets/e420ef81c968.jpg" alt="Sesión de pareja en las calles de Santiago" loading="lazy"></figure>
-<figure class="fr"><img src="../../assets/ac4c9af7a94b.jpg" alt="Sesión de pareja en un parque" loading="lazy"></figure>
 <figure class="fr"><img src="../../assets/292f35555254.jpg" alt="Sesión de pareja en las calles de Santiago" loading="lazy"></figure>
 <figure class="fr"><img src="../../assets/f931f3fe7082.jpg" alt="Sesión de pareja en las calles de Santiago" loading="lazy"></figure>
 <figure class="fr"><img src="../../assets/37e45d1a9369.jpg" alt="Sesión de pareja en un parque" loading="lazy"></figure>
