@@ -8,7 +8,7 @@
 <meta name="description" content="Estudio de fotografía, video y contenido para marcas en Santiago de Chile.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Condensed:ital,wght@0,400;0,500;1,400&family=Bodoni+Moda:ital,opsz@1,6..96&family=Schibsted+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Condensed:ital,wght@0,400;0,500;1,400&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;1,6..96,400&family=Schibsted+Grotesk:wght@400;500&display=swap" rel="stylesheet">
 <style>
 :root{--script:"Bodoni Moda",Georgia,serif;--cream:#faf7f2;--white:#ffffff;--brown:#070d0d;--blush:#f2cdd5;--noir:#070d0d;--mute:#6d6a66;--pad:clamp(18px,4vw,56px);--gap:clamp(12px,1.6vw,24px);
 --serif:"Libre Caslon Condensed","Libre Caslon Text",Didot,"Bodoni 72",Georgia,serif}
@@ -173,11 +173,12 @@ body{background:var(--cream)}
 .h2-col .c1{margin-top:clamp(24px,3vw,44px)}.h2-col .c2{margin-top:clamp(8px,1vw,14px)}.h2-col .c3{margin-top:clamp(36px,4.2vw,60px)}
 @media (max-width:760px){.h2-col{gap:8px}.h2-col img{height:auto !important;width:100%}.h2-col figure{flex:1 1 0}.h2-col figure:nth-child(n){margin-top:0}.h2-col .c1,.h2-col .c3{margin-top:22px}}
 .h3-head{text-align:center;margin:0 0 clamp(28px,3.5vw,48px)}
-.h3-head h1{margin:0;font-size:clamp(56px,9vw,150px);line-height:.9;letter-spacing:-.02em}
-.h3-head .sub{margin:clamp(10px,1.4vw,20px) 0 0;font-size:clamp(22px,2.7vw,42px);line-height:1.15}
-.h3-foot{display:grid;grid-template-columns:1fr auto 1fr;align-items:end;gap:16px 40px;padding-top:18px;border-top:1px solid var(--noir)}
-.h3-logo{grid-column:2;grid-row:1;width:clamp(240px,30vw,460px);height:auto;filter:brightness(0);justify-self:center}
-.h3-foot .tag{grid-column:1;grid-row:1;margin:0;font-size:clamp(20px,1.8vw,26px);line-height:1.2}
+.h3-head h1{margin:0;font-family:"Bodoni Moda",Georgia,serif;font-variation-settings:"opsz" 96;font-weight:400;font-size:clamp(46px,6.6vw,108px);line-height:.95;letter-spacing:-.015em}
+.h3-head .sub{margin:clamp(14px,1.6vw,22px) 0 0;font-family:"Schibsted Grotesk",sans-serif;font-size:clamp(14px,1.15vw,17px);letter-spacing:.06em;color:var(--mute)}
+.h3-head .sub span{margin:0 .7em;color:rgba(7,13,13,.3)}
+.h3-foot{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:16px 40px;padding-top:22px;border-top:1px solid rgba(7,13,13,.18)}
+.h3-logo{grid-column:2;grid-row:1;width:clamp(200px,22vw,340px);height:auto;filter:brightness(0);justify-self:center}
+.h3-foot .tag{grid-column:1;grid-row:1;margin:0;font-size:clamp(18px,1.5vw,22px);line-height:1.2;color:#3b3b3b}
 .h3-foot .links{grid-column:3;grid-row:1;justify-self:end}
 @media (max-width:760px){.h3-foot{grid-template-columns:1fr}.h3-logo,.h3-foot .tag,.h3-foot .links{grid-column:1;grid-row:auto;justify-self:center;text-align:center}.h3-logo{width:70%;margin-bottom:6px}}
 .bar .logo-mini{display:none}.bar .wrap{justify-content:flex-end}.bar.scrolled .wrap{justify-content:space-between}.bar.scrolled .logo-mini{display:block}
@@ -241,11 +242,11 @@ body{background:var(--cream)}
 
 <main>
 <div class="hero2 tex"><div class="wrap">
-<p class="h2-top"><span>Santiago, Chile</span><span class="it">Creatividad · Intención · Storytelling</span><span>est. 2026</span></p>
+<p class="h2-top" style="border-bottom-color:rgba(7,13,13,.18)"><span>Santiago, Chile</span><span class="it">Creatividad · Intención · Storytelling</span><span>est. 2026</span></p>
 <div class="h2-col"><figure class="c0"><img src="../assets/44267cbed9eb.jpg" alt="Fotografía · Dior"></figure><figure class="c1"><img src="../assets/bfaea4a55663.jpg" alt="Fotografía · Miu Miu · MJ"></figure><figure class="c2"><img src="../assets/9a2eaf58a164.jpg" alt="Fotografía · Kadú"></figure><figure class="c3"><img src="../assets/retrato-sweater-bn.jpg" alt="Fotografía · Retrato"></figure></div>
 <div class="h3-head">
-<h1 class="serif">Estudio creativo</h1>
-<p class="serif sub">Fotografía | Video | Creación de contenido | Marketing digital</p>
+<h1>Estudio creativo</h1>
+<p class="sub">Fotografía<span>|</span>Video<span>|</span>Creación de contenido<span>|</span>Marketing digital</p>
 </div>
 <div class="h3-foot">
 <img class="h3-logo" src="../assets/85394c5534aa.png" alt="Camila Escandar Studio">
