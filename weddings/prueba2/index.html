@@ -54,11 +54,13 @@ figure{margin:0}
 .hcol{display:flex;justify-content:space-between;align-items:flex-end;gap:clamp(8px,1.3vw,20px);margin-bottom:clamp(28px,3.5vw,52px)}
 .hcol figure{flex:none}
 .hcol img{width:auto;object-fit:cover}
-.hc-rings img{height:min(15vw,216px);aspect-ratio:2/3}.hc-rings{align-self:center}
-.hc-walk img{height:min(21vw,300px);aspect-ratio:2/3}.hc-walk{align-self:flex-start}
-.hc-bub img{height:min(23vw,330px);aspect-ratio:3/2}
-.hc-bal img{height:min(18vw,260px);aspect-ratio:2/3}.hc-bal{align-self:flex-start;margin-top:clamp(20px,3vw,48px)}
-.hc-cor img{height:min(13vw,190px);aspect-ratio:2/3}
+.hc-rings img,.hc-walk img,.hc-bal img,.hc-cor img{height:min(19vw,270px);aspect-ratio:2/3}
+.hc-bub img{height:min(19vw,270px);aspect-ratio:3/2}
+.hc-rings{align-self:flex-end}.hc-walk{align-self:flex-start}.hc-bal{align-self:flex-start;margin-top:clamp(12px,1.6vw,24px)}.hc-cor{align-self:flex-end}
+.hcol figure{opacity:0;transform:translateY(14px);animation:hin .9s cubic-bezier(.2,.7,.2,1) forwards}
+.hcol figure:nth-child(1){animation-delay:.15s}.hcol figure:nth-child(2){animation-delay:.4s}.hcol figure:nth-child(3){animation-delay:.65s}.hcol figure:nth-child(4){animation-delay:.9s}.hcol figure:nth-child(5){animation-delay:1.15s}
+@keyframes hin{to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.hcol figure{animation:none;opacity:1;transform:none}}
 .cover-id{display:flex;flex-direction:column}
 .cover-id .logo{margin:0;line-height:0}
 .cover-id .logo img{width:100%;height:auto;filter:brightness(0)}
