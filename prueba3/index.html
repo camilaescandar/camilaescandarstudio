@@ -8,10 +8,10 @@
 <meta name="description" content="Estudio de fotografía, video y contenido para marcas en Santiago de Chile.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Condensed:ital,wght@0,400;0,500;1,400&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;1,6..96,400&family=Schibsted+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;1,6..96,400&family=Schibsted+Grotesk:wght@400;500&display=swap" rel="stylesheet">
 <style>
 :root{--script:"Bodoni Moda",Georgia,serif;--cream:#faf7f2;--white:#ffffff;--brown:#070d0d;--blush:#f2cdd5;--noir:#070d0d;--mute:#6d6a66;--pad:clamp(18px,4vw,56px);--gap:clamp(12px,1.6vw,24px);
---serif:"Libre Caslon Condensed","Libre Caslon Text",Didot,"Bodoni 72",Georgia,serif}
+--serif:"Bodoni Moda",Didot,"Bodoni 72",Georgia,serif}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;overflow-x:clip}
 body{margin:0;background:var(--cream);color:var(--brown);font:400 16px/1.6 "Schibsted Grotesk",system-ui,sans-serif;overflow-x:hidden}
@@ -19,7 +19,8 @@ img,video{display:block;max-width:100%}
 a{color:inherit;text-decoration-thickness:1px;text-underline-offset:4px}
 :focus-visible{outline:2px solid currentColor;outline-offset:3px}
 ::selection{background:var(--blush);color:var(--brown)}
-.serif{font-family:var(--serif);font-weight:400;letter-spacing:-.015em}
+.serif{font-family:var(--serif);font-weight:400;font-variation-settings:"opsz" 96;letter-spacing:-.015em}
+.svc h3,.cap .brand,.btn .b-t,.direct a,.serif *{font-variation-settings:"opsz" 96}
 .wrap{max-width:1480px;margin:0 auto;padding:0 var(--pad)}
 figure{margin:0}
 figcaption{font-size:12px;line-height:1.3;margin-top:8px;color:var(--mute)}
@@ -171,6 +172,7 @@ body{background:var(--cream)}
 .h2-col img{height:clamp(200px,22vw,320px);width:auto;aspect-ratio:2/3;object-fit:cover}
 .h2-col .c1 img{height:clamp(190px,20vw,292px)}.h2-col .c2 img{height:clamp(190px,20.5vw,300px)}.h2-col .c3 img{height:clamp(196px,21vw,306px)}
 .h2-col .c1{margin-top:clamp(24px,3vw,44px)}.h2-col .c2{margin-top:clamp(8px,1vw,14px)}.h2-col .c3{margin-top:clamp(36px,4.2vw,60px)}
+@media (max-width:760px){.contact h2,.services h2,.photo h2,.about h2{font-size:14.5vw !important}.hero2 .h3-head h1{font-size:12.5vw}}
 @media (max-width:760px){.h2-col{gap:8px}.h2-col img{height:auto !important;width:100%}.h2-col figure{flex:1 1 0}.h2-col figure:nth-child(n){margin-top:0}.h2-col .c1,.h2-col .c3{margin-top:22px}}
 .h3-head{text-align:center;margin:0 0 clamp(28px,3.5vw,48px)}
 .h3-head h1{margin:0;font-family:"Bodoni Moda",Georgia,serif;font-variation-settings:"opsz" 96;font-weight:400;font-size:clamp(46px,6.6vw,108px);line-height:.95;letter-spacing:-.015em}
